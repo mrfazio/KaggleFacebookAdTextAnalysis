@@ -1,0 +1,263 @@
+---
+title: "RmdFacebooksAds"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# A Gentle Introduction of Language Processing in R
+
+The aim of this notebook is to show some techniques of language processing in R. We will explore the facebook ads purposed in this notebook and try to understand and get insights about the nature of the advertisements. We will begin by importing the used libraries and the dataset.
+
+```{r}
+library(tidyverse)
+library(DT)
+library(tm)
+library(spacyr)
+library(SnowballC)
+library(RDSTK)
+library(wordcloud)
+library(stringi)
+
+df_ads <- read_csv('fbpac-ads-en-US.csv')
+print(colnames(df_ads))
+```
+
+We are ready to start and we will present each section as a simple sequence of steps. Let's go straightfoward and start!
+
+# Basic EDA
+
+## Checking Columns
+
+As we can see, we have many columns. Let's understand each one of them and check if whether or not they are useful for our analysis:
+
+* **ID**: Post id number on facebook
+> These informations don't give us any informations about the ads, we will eliminate this column.
+
+* **html**: HTML of the ad as collected by the Political Ad Collector
+> We are not interested on the HTML tags, we want to check the words and process them. So, let's also eliminate this column.
+
+* **political / not political**: Number of Political Ad Collector users who have voted that the ad is / isn't political
+> Interesting! Let's keep and explore this information.
+
+* **title and message**
+> These 2 columns will be the main objects of our analysis!
+
+* **thumbnail**: Link for a thumbnail of the profile image (of the advertiser)
+> It would be interesting to, maybe, create an image processing tool to explore these images but it's out of the scope of this notebook.
+
+* **created_at**: Date ad was first collected by the Political Ad Collector
+> It's aways interesting to have a time dimension in our analysis. It allows us to, for instance, study the evolution of the ads as the time passes.
+
+* **updated_at**: The most recent time it got an impression OR the most recent time it was voted on
+> The same as the last column: we will keep this column.
+
+* **lang**: Language
+> It's aways english for the case of this dataset. So, there is no reason to keep this column.
+
+## Created At / Updated At Analysis
+
+Before filtering the columns, I just would like to check if the "created at" and "updated at" columns are equal (or if they are equal most of times):
+
+```{r}
+ggplot(df_ads %>% mutate(`Was Updated` = (created_at == updated_at)), 
+       aes(x = `Was Updated`, fill = `Was Updated`)) + 
+  geom_histogram(stat = 'count',color = 'black') +
+  ggtitle('Was the Ad Updated at Least Once?') +
+  ylab('Number of Times') + theme(text = element_text(size = 13))
+```
+
+Ok. We can see that we get updated ads frequently. So, we will keep both columns (created_at and updated_at). We can also check the time that it takes to update a post and see the histogram of that difference:
+
+```{r}
+ggplot(df_ads %>% mutate(`Update Time` = as.double(difftime(updated_at, created_at)) / (60 * 60 * 24)), 
+       aes(x = `Update Time`)) + 
+  geom_histogram(color = 'black', fill = 'lightblue') +
+  ggtitle('Updating Time Histogram (Days)') +
+  ylab('Count') + theme(text = element_text(size = 13)) +
+  scale_y_sqrt() + scale_x_sqrt()
+```
+
+We can also ask ourselves: are those distributions similar for political and non political posts?
+
+```{r}
+ggplot(df_ads %>% 
+         mutate(`Update Time` = as.double(difftime(updated_at, created_at)) / (60 * 60 * 24)) %>% 
+         mutate(Political = political > not_political), 
+       aes(x = `Update Time`)) + 
+  geom_histogram(color = 'black', aes(fill = Political)) +
+  ggtitle('Updating Time Histogram (Days)') +
+  ylab('Count') + theme(text = element_text(size = 13)) +
+  scale_x_sqrt() + scale_y_sqrt()
+```
+
+Here we can notice that if we have no update, it's probable that we are dealing with a non politcal post. If we have at least one update, it becames more probable that we are dealing with a political post! It confirms what we saw in the last plot: people tend to vote in political posts!
+
+## Filtering the Columns
+
+Let's filter our dataframe and check the structure of the new table:
+
+```{r}
+used_columns <- c('title', 'message', 'political', 'not_political', 'created_at', 'updated_at')
+df_ads <- df_ads %>% select(one_of(used_columns))
+df_ads %>% head %>% datatable
+```
+
+## Votes Confidence Intervals
+
+We can also check the counting of the political / not political votes:
+
+```{r}
+df_political_distribution <- data.frame(
+  Vote = c(df_ads$political, df_ads$not_political),
+  Type = c(rep('Political', length(df_ads$political)), rep('Not Political', length(df_ads$not_political)))
+)
+
+ggplot(df_political_distribution, aes(x = Vote, color = Type)) +
+  geom_density2d(stat = 'count') + ylab('Count') +
+  theme(text = element_text(size = 13)) + scale_x_sqrt() + scale_y_sqrt() +
+  ggtitle('Political / Not Political Count')
+```
+
+If we have more votes we tend to have a bigger chance to deal with political posts. It seems to happen because of a bias in the feelings of the users as we already seen in the previous section: when a user finds a political post, he tends to vote with a higher probability thanks to a sentiment of displeasure and engagement.
+
+Let's create a new feature: the % of people that thinks that the ad has a political nature. This indicator may be associated with a standard deviation of a proportions test, where the standard deviation is given by:
+
+$$ \sigma^2 = \frac{p.(1 - p)}{N} $$
+
+Where "N" is the total number of voters of the ad in analysis and "p" is the proportio of people that thinks that a post is political:
+
+$$ p = \frac{V_{Political}}{N} $$
+
+It's possible to estimate the standard deviation because the proportion may be seen as the average of variables that follow a Bernouilli's distribution and the average of these variables converge to a normal distribution as "N" tends to infinity. With this concept, we are able to estimate the standard deviation and define confidence intervals as well as p-value analysis!
+
+```{r}
+df_ads <- df_ads %>%
+  mutate(political_prob = 
+           if_else(political + not_political < 30, NaN, 
+                                  political / (political + not_political))) %>% 
+  mutate(political_prob_std = 
+           sqrt(political_prob * (1 - political_prob) / (political + not_political) ))
+
+head(datatable(df_ads))
+```
+
+Here we are following a rule of thumb that says that we need at least $30$ samples to consider that we will have a good statistical test and a good convergence to the normal distribution. What are we going to do with the other samples? Well, can't get many conclusions. Anyway, we already have some nice results here: we  have a set of confidence intervals for some text messages:
+
+```{r}
+df_ads %>% 
+  filter(!is.na(political_prob)) %>% 
+  select(one_of(c('message', 'political_prob', 'political_prob_std'))) %>% 
+  datatable
+```
+
+Let's show an example:
+
+```{r, fig.width = 11, fig.height = 5, echo = FALSE}
+df_example <- data.frame(
+  Message = c('The Global Gag Rule puts lives at risk 
+    and limits access to modern 
+    contraceptives around the world. 
+    Take action with Population Connection now: 
+    Say NO to the Global Gag Rule!',
+    'As Governor of New York, my top priority 
+    is the safety of every New Yorker',
+    'Innovation in medicine is bringing potential 
+    cures to some of the most complex diseases 
+    we face, like cancer, rheumatoid arthritis, 
+    and Crohn’s disease.'),
+  `Prob` = c(0.707, 0.958, 0.68),
+  Std = c(0.071, 0.0288, 0.0659)
+)
+
+ggplot(df_example, aes(x = Message, y = Prob, ymin = Prob - 3 * Std, ymax = Prob + 3 * Std)) + 
+  geom_pointrange(size = 1.2, shape = 21, color = 'black', aes(fill = Message)) +
+  theme(text = element_text(size = 14), 
+        axis.text.x = element_text(angle = 0, hjust = 0.5),
+        legend.position = 'none') + ylab('Political Probability') + 
+  ggtitle('Proportion Confidence Intervals')
+```
+
+Well, I got $3$ examples here manualy but if you check the messages you will see that it's necessary to clean the text and prepare it to be processed and analysed.
+
+# Cleaning the Texts
+
+We can clean the texts using the tm library:
+
+```{r}
+removeHTML <- function(x) (return(gsub('</?[^>]+>' , '', x)))
+removeURL <- function(x) (return(gsub('http[[:alnum:]]*', '', x)))
+removeAccents <- function(x) (return(stri_trans_general(str = x,id = 'Latin-ASCII')))
+removeNonAlphanum <- function(x) (return(gsub('[^[:alnum:] ]', '', x)))
+
+vector_msg_raw <- df_ads$message
+vector_msg_clean <- 
+  
+  VectorSource(vector_msg_raw) %>% 
+  Corpus %>%
+  
+  tm_map(content_transformer(removeHTML)) %>% 
+  tm_map(content_transformer(removeURL)) %>% 
+  tm_map(content_transformer(removeAccents)) %>% 
+  tm_map(content_transformer(removeNonAlphanum)) %>% 
+  tm_map(removeWords, stopwords(c('que', 'las', 'the' 'of'))) %>% 
+  tm_map(stripWhitespace) %>% 
+  tm_map(removeNumbers) %>% 
+  tm_map(removePunctuation) %>% 
+  tm_map(stemDocument)
+  
+```
+
+The corpus function defines an object that can be manipulated with mapping functions. Those mapping functions will:
+
+* Remove HTML tags
+* Remove URL links
+* Remove a set of stop words
+* Strip white spaces of the strings
+* Remove numbers and
+* Remove punctuations
+
+Also, the stemming operation will be applied: it removes the suffixes and prefixes of each word and then we will count words like "love" and "lovely" as a single word.  Finally, we will inspect the resulting object, that will be presented in the form of a matrix where the columns represent the posts and the rows represent the words.
+
+```{r}
+termDocMat <- TermDocumentMatrix(vector_msg_clean)
+inspect(termDocMat)
+```
+
+We will start by checking the frequency of each word and showing the resulting table in a wordcloud scheme but, in order to do that, we need to group the words by the frequencies in the resulting dataframe:
+
+```{r}
+matFreq <- as.matrix(findMostFreqTerms(termDocMat, n = 100))
+flat_matFreq <- flatten(matFreq)
+df_words_freq <- data.frame(Word = names(flat_matFreq), Frequency = unlist(flat_matFreq))
+df_words_freq <- unique(df_words_freq) %>% arrange(desc(Frequency))
+datatable(df_words_freq)
+```
+
+```{r}
+library("RColorBrewer")
+wordcloud(df_words_freq$Word, freq = df_words_freq$Frequency, scale=c(2.5, 0.5),
+          random.color = TRUE, max.words = 50, colors = brewer.pal(8, "Dark2"))
+```
+
+Here we have an overall result, which makes sense: words like "Trump", "Million", "China" and "God" are among the most important ones. It's true that we have a general insight here but we can also check how the word clouds vary when we take political, neutral and non political posts. To do that, we will create $2$ documents:
+
+* __Political__: We will gather all posts where most of people voted for "political" here.
+* __Non Political__: We will gather all posts where most of people voted for "non political" here.
+
+The posts where the number of votes for political and non political are similar will not be considered in this analysis. Since we have $2$ well defined documents we will be able to apply another criteria to estimate the weights of each word. We can use the "TF-IDF" metric, which is smarter than the simple frequency.
+
+The TF-IDF considers that the weight of a word is important if that word appears frequently in a document but is rare in the other ones. So, it will show us which words are important in each category, in each classification that we have and that is defined by each document! It can be expressed as:
+
+
+$w_{i, j} = tf_{i, j} . log \left( \frac{N}{df_i} \right)$
+
+Where $$tf_i, j$$ is the number of occurrences of the word "i" in the document "j", $$N$$ is the total number of documents and $$df_i$$ is the number of occurrences containing "i". To do that, we will merge political posts and non political posts in two "big strings" and apply our formula:
+
+```{r}
+
+```
+
+
+
