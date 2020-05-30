@@ -191,21 +191,25 @@ removeURL <- function(x) (return(gsub('http[[:alnum:]]*', '', x)))
 removeAccents <- function(x) (return(stri_trans_general(str = x,id = 'Latin-ASCII')))
 removeNonAlphanum <- function(x) (return(gsub('[^[:alnum:] ]', '', x)))
 
-vector_msg_raw <- df_ads$message
-vector_msg_clean <- 
+generate_corpus <- function(vector_in) {
   
-  VectorSource(vector_msg_raw) %>% 
+  VectorSource(vector_in) %>% 
   Corpus %>%
-  
   tm_map(content_transformer(removeHTML)) %>% 
   tm_map(content_transformer(removeURL)) %>% 
   tm_map(content_transformer(removeAccents)) %>% 
   tm_map(content_transformer(removeNonAlphanum)) %>% 
-  tm_map(removeWords, stopwords(c('que', 'las', 'the' 'of'))) %>% 
+  tm_map(removeWords, stopwords(kind = 'en')) %>% 
   tm_map(stripWhitespace) %>% 
   tm_map(removeNumbers) %>% 
   tm_map(removePunctuation) %>% 
-  tm_map(stemDocument)
+  tm_map(stemDocument) %>% 
+  return()
+  
+}
+
+vector_msg_raw <- df_ads$message
+vector_msg_clean <-generate_corpus(vector_msg_raw)
   
 ```
 
@@ -256,8 +260,27 @@ $w_{i, j} = tf_{i, j} . log \left( \frac{N}{df_i} \right)$
 Where $$tf_i, j$$ is the number of occurrences of the word "i" in the document "j", $$N$$ is the total number of documents and $$df_i$$ is the number of occurrences containing "i". To do that, we will merge political posts and non political posts in two "big strings" and apply our formula:
 
 ```{r}
+political_msgs <- paste((df_ads %>% filter(political > not_political))$message, collapse = ' ')
+not_political_msgs <- paste((df_ads %>% filter(political < not_political))$message, collapse = ' ')
 
+political_corpus <- generate_corpus(political_msgs)
+not_political_corpus <- generate_corpus(not_political_msgs)
 ```
+
+```{r}
+get_tf_idf_df <- function(corpus, n_top = 100) {
+  docTermMat <- DocumentTermMatrix(corpus, control = list(weighting = weightTfIdf))
+  matTfIdf <- as.matrix(findMostFreqTerms(docTermMat, n = n_top))
+  flat_matTfIdf <- flatten(matTfIdf)
+  df_words_tfidf <- data.frame(Word = names(flat_matTfIdf), TfIdf = unlist(flat_matTfIdf))
+  # df_words_tfidf <- unique(df_words_tfidf) %>% arrange(desc(TfIdf))
+  return(df_words_tfidf)
+}
+
+df_tfidf_political <- get_tf_idf_df(political_corpus)
+df_tfidf_not_political <- get_tf_idf_df(not_political_corpus)
+```
+
 
 
 
