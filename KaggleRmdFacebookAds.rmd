@@ -20,6 +20,7 @@ library(RDSTK)
 library(wordcloud)
 library(stringi)
 library(gridExtra)
+library(RColorBrewer)
 
 df_ads <- read_csv('fbpac-ads-en-US.csv')
 print(colnames(df_ads))
@@ -141,7 +142,7 @@ df_ads <- df_ads %>%
   mutate(political_prob_std = 
            sqrt(political_prob * (1 - political_prob) / (political + not_political) ))
 
-head(datatable(df_ads))
+datatable(df_ads %>% select(one_of(c('title', 'political', 'not_political', 'political_prob', 'political_prob_std'))))
 ```
 
 Here we are following a rule of thumb that says that we need at least $30$ samples to consider that we will have a good statistical test and a good convergence to the normal distribution. What are we going to do with the other samples? Well, can't get many conclusions. Anyway, we already have some nice results here: we  have a set of confidence intervals for some text messages:
@@ -182,7 +183,7 @@ ggplot(df_example, aes(x = Message, y = Prob, ymin = Prob - 3 * Std, ymax = Prob
 
 Well, I got $3$ examples here manualy but if you check the messages you will see that it's necessary to clean the text and prepare it to be processed and analysed.
 
-# Cleaning the Texts
+# __Stemming__: Cleaning the Texts / Extracting Stems
 
 We can clean the texts using the tm library:
 
@@ -194,12 +195,13 @@ removeNonAlphanum <- function(x) (return(gsub('[^[:alnum:] ]', '', x)))
 
 generate_corpus <- function(vector_in) {
   
-  VectorSource(vector_in) %>% 
-  Corpus %>%
+  VectorSource(vector_in) %>% Corpus %>% 
+    
   tm_map(content_transformer(removeHTML)) %>% 
   tm_map(content_transformer(removeURL)) %>% 
   tm_map(content_transformer(removeAccents)) %>% 
-  tm_map(content_transformer(removeNonAlphanum)) %>% 
+  tm_map(content_transformer(removeNonAlphanum)) %>%
+    
   tm_map(removeWords, stopwords(kind = 'en')) %>% 
   tm_map(stripWhitespace) %>% 
   tm_map(removeNumbers) %>% 
@@ -244,13 +246,14 @@ get_df_words_freq <- function(vector_msg_clean_in) {
   df_words_freq <- unique(df_words_freq) %>% arrange(desc(Frequency))
   
   return(df_words_freq)
+  
 }
 
-vector_msg_clean %>% get_df_words_freq %>% datatable
+df_words_freq <- vector_msg_clean %>% get_df_words_freq
+df_words_freq %>% datatable
 ```
 
 ```{r}
-library("RColorBrewer")
 wordcloud(df_words_freq$Word, freq = df_words_freq$Frequency, scale=c(2.5, 0.5),
           random.color = TRUE, max.words = 50, colors = brewer.pal(8, "Dark2"))
 ```
@@ -276,18 +279,33 @@ not_political_msgs <- (df_ads %>% filter(political < not_political))$message
 ```{r}
 df_political_msgs_freq <- political_msgs %>% generate_corpus %>% get_df_words_freq
 df_not_political_msgs_freq <- not_political_msgs %>% generate_corpus %>% get_df_words_freq
-
-wordcloud_political <- wordcloud(df_political_msgs_freq$Word, df_political_msgs_freq$Frequency)
-wordcloud_not_political <- wordcloud(df_not_political_msgs_freq$Word, df_not_political_msgs_freq$Frequency)
-
-grid.arrange(wordcloud_political, wordcloud_not_political, ncol = 2)
 ```
 
 
 ```{r}
 
+wordcloud_political <- wordcloud(df_political_msgs_freq$Word, df_political_msgs_freq$Frequency, scale=c(2.5, 0.5), 
+                                 max.words = 50, colors = brewer.pal(8, "Dark2"), random.color = TRUE)
 ```
 
+```{r}
 
+wordcloud_not_political <- wordcloud(df_not_political_msgs_freq$Word, df_not_political_msgs_freq$Frequency, 
+                                     max.words = 50, scale=c(2.5, 0.5),
+                                     colors = brewer.pal(8, "Dark2"), random.color = TRUE)
+```
 
+Those results really make sense: "God" is a common word in non political posts and words like "Trump", "Immigrants" and "Wage" are strongly present in political ads. So, we are ready to get the insights from those wordclouds and follow to the next part of our analysis.
+
+Anyway, it's important to note that we have not exactly a set of "complete" words. In fact, we have used a "stemming" operation, which may be defined as:
+> The process of reducing inflected (or sometimes derived) words to their word stem, base or root form—generally a written word form. The stem need not be identical to the morphological root of the word; it is usually sufficient that related words map to the same stem, even if this stem is not in itself a valid root (Source: Wikipedia).
+
+If we want to identify the "main words" that represent each kind of inflection, we are talking about "lemmatisation":
+> Lemmatisation (or lemmatization) in linguistics is the process of grouping together the inflected forms of a word so they can be analysed as a single item, identified by the word's lemma, or dictionary form. In computational linguistics, lemmatisation is the algorithmic process of determining the lemma of a word based on its intended meaning. _Unlike stemming, lemmatisation depends on correctly identifying the intended part of speech and meaning of a word in a sentence, as well as within the larger context surrounding that sentence, such as neighboring sentences or even an entire document. As a result, developing efficient lemmatisation algorithms is an open area of research (Source: Wikipedia)_.
+
+As already mentioned, the lemmatization demands a full comprehension of the context in which different words are located. So, we will now check an example of lemmatisation and to do that we will use the __SpacyR__ library.
+
+# __Lemmatisation__: Improving the Insights by Checking Relationships
+
+We can improve our analysis even more if we think that we have syntatical relationships among different words. So, we can use the __SpacyR__ library to get this analysis and improve the previous word clouds. We will be able to 
 
