@@ -19,6 +19,7 @@ library(SnowballC)
 library(RDSTK)
 library(wordcloud)
 library(stringi)
+library(gridExtra)
 
 df_ads <- read_csv('fbpac-ads-en-US.csv')
 print(colnames(df_ads))
@@ -203,13 +204,14 @@ generate_corpus <- function(vector_in) {
   tm_map(stripWhitespace) %>% 
   tm_map(removeNumbers) %>% 
   tm_map(removePunctuation) %>% 
-  tm_map(stemDocument) %>% 
+  tm_map(stemDocument) %>%
+    
   return()
   
 }
 
 vector_msg_raw <- df_ads$message
-vector_msg_clean <-generate_corpus(vector_msg_raw)
+vector_msg_clean <- generate_corpus(vector_msg_raw)
   
 ```
 
@@ -232,11 +234,19 @@ inspect(termDocMat)
 We will start by checking the frequency of each word and showing the resulting table in a wordcloud scheme but, in order to do that, we need to group the words by the frequencies in the resulting dataframe:
 
 ```{r}
-matFreq <- as.matrix(findMostFreqTerms(termDocMat, n = 100))
-flat_matFreq <- flatten(matFreq)
-df_words_freq <- data.frame(Word = names(flat_matFreq), Frequency = unlist(flat_matFreq))
-df_words_freq <- unique(df_words_freq) %>% arrange(desc(Frequency))
-datatable(df_words_freq)
+
+get_df_words_freq <- function(vector_msg_clean_in) {
+  
+  termDocMat_in <- TermDocumentMatrix(vector_msg_clean_in)
+  matFreq <- as.matrix(findMostFreqTerms(termDocMat_in, n = 100))
+  flat_matFreq <- flatten(matFreq)
+  df_words_freq <- data.frame(Word = names(flat_matFreq), Frequency = unlist(flat_matFreq))
+  df_words_freq <- unique(df_words_freq) %>% arrange(desc(Frequency))
+  
+  return(df_words_freq)
+}
+
+vector_msg_clean %>% get_df_words_freq %>% datatable
 ```
 
 ```{r}
@@ -250,9 +260,7 @@ Here we have an overall result, which makes sense: words like "Trump", "Million"
 * __Political__: We will gather all posts where most of people voted for "political" here.
 * __Non Political__: We will gather all posts where most of people voted for "non political" here.
 
-The posts where the number of votes for political and non political are similar will not be considered in this analysis. Since we have $2$ well defined documents we will be able to apply another criteria to estimate the weights of each word. We can use the "TF-IDF" metric, which is smarter than the simple frequency.
-
-The TF-IDF considers that the weight of a word is important if that word appears frequently in a document but is rare in the other ones. So, it will show us which words are important in each category, in each classification that we have and that is defined by each document! It can be expressed as:
+The posts where the number of votes for political and non political are similar will not be considered in this analysis.
 
 
 $w_{i, j} = tf_{i, j} . log \left( \frac{N}{df_i} \right)$
@@ -260,25 +268,24 @@ $w_{i, j} = tf_{i, j} . log \left( \frac{N}{df_i} \right)$
 Where $$tf_i, j$$ is the number of occurrences of the word "i" in the document "j", $$N$$ is the total number of documents and $$df_i$$ is the number of occurrences containing "i". To do that, we will merge political posts and non political posts in two "big strings" and apply our formula:
 
 ```{r}
-political_msgs <- paste((df_ads %>% filter(political > not_political))$message, collapse = ' ')
-not_political_msgs <- paste((df_ads %>% filter(political < not_political))$message, collapse = ' ')
-
-political_corpus <- generate_corpus(political_msgs)
-not_political_corpus <- generate_corpus(not_political_msgs)
+political_msgs <- (df_ads %>% filter(political > not_political))$message
+not_political_msgs <- (df_ads %>% filter(political < not_political))$message
 ```
 
-```{r}
-get_tf_idf_df <- function(corpus, n_top = 100) {
-  docTermMat <- DocumentTermMatrix(corpus, control = list(weighting = weightTfIdf))
-  matTfIdf <- as.matrix(findMostFreqTerms(docTermMat, n = n_top))
-  flat_matTfIdf <- flatten(matTfIdf)
-  df_words_tfidf <- data.frame(Word = names(flat_matTfIdf), TfIdf = unlist(flat_matTfIdf))
-  # df_words_tfidf <- unique(df_words_tfidf) %>% arrange(desc(TfIdf))
-  return(df_words_tfidf)
-}
 
-df_tfidf_political <- get_tf_idf_df(political_corpus)
-df_tfidf_not_political <- get_tf_idf_df(not_political_corpus)
+```{r}
+df_political_msgs_freq <- political_msgs %>% generate_corpus %>% get_df_words_freq
+df_not_political_msgs_freq <- not_political_msgs %>% generate_corpus %>% get_df_words_freq
+
+wordcloud_political <- wordcloud(df_political_msgs_freq$Word, df_political_msgs_freq$Frequency)
+wordcloud_not_political <- wordcloud(df_not_political_msgs_freq$Word, df_not_political_msgs_freq$Frequency)
+
+grid.arrange(wordcloud_political, wordcloud_not_political, ncol = 2)
+```
+
+
+```{r}
+
 ```
 
 
