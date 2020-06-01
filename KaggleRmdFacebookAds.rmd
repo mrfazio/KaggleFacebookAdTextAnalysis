@@ -72,10 +72,10 @@ As we can see, we have many columns. Let's understand each one of them and check
 > Esses campos informam o número de usuários que votaram como a propaganda sendo política ou não. Esta informação nos parece interessante. Vamos mantê-la e explorá-la mais a frente.
 
 * **title and message**
-> As colunas serão as princiapis colunas que iremos explorar por meio de técnicas de mineração de textos.
+> Estas serão as principais colunas que iremos explorar por meio de técnicas de mineração de textos.
 
 * **thumbnail**: Link for a thumbnail of the profile image (of the advertiser)
-> It would be interesting to, maybe, create an image processing tool to explore these images but it's out of the scope of this notebook.
+> Não iremos explorar thumbnail, portanto podemos descartá-la.
 
 * **created_at**: Date ad was first collected by the Political Ad Collector
 > It's aways interesting to have a time dimension in our analysis. It allows us to, for instance, study the evolution of the ads as the time passes.
