@@ -10,19 +10,47 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The aim of this notebook is to show some techniques of language processing in R. We will explore the facebook ads purposed in this notebook and try to understand and get insights about the nature of the advertisements. We will begin by importing the used libraries and the dataset.
 
+Pacotes necessários para o trabalho
 ```{r}
-library(tidyverse)
-library(DT)
-library(tm)
-library(spacyr)
-library(SnowballC)
-library(RDSTK)
-library(wordcloud)
-library(stringi)
-library(gridExtra)
-library(RColorBrewer)
+rm(list=ls()) 
 
+lista_de_pacotes <- c('tidyverse',
+'DT',
+'tm',
+'spacyr',
+'SnowballC',
+'RDSTK',
+'wordcloud',
+'stringi',
+'gridExtra',
+'RColorBrewer')
+
+novos_pacotes <- lista_de_pacotes[!(lista_de_pacotes %in% installed.packages()[, "Package"])]
+
+if (length(novos_pacotes))
+  install.packages(novos_pacotes, dependencies = TRUE)
+
+for (package in lista_de_pacotes){
+  library(package, character.only = TRUE)
+}
+```
+
+Leitura do arquivo
+```{r}
 df_ads <- read_csv('fbpac-ads-en-US.csv')
+
+```
+
+
+Visualização das 10 primeiras linhas para verificar se o arquivo foi importado corretamente.
+```{r}
+head(df_ads , n = 10)
+
+#print(colnames(df_ads))
+```
+
+Verificando as colunas do dataset
+```{r}
 print(colnames(df_ads))
 ```
 
@@ -35,16 +63,16 @@ We are ready to start and we will present each section as a simple sequence of s
 As we can see, we have many columns. Let's understand each one of them and check if whether or not they are useful for our analysis:
 
 * **ID**: Post id number on facebook
-> These informations don't give us any informations about the ads, we will eliminate this column.
+> Esta informação é a chave primária da base de dados. No nosso contexto, esta informação não tem nenhum significado para a análise sobre a publicidade. Podemos, então, removê-la.
 
 * **html**: HTML of the ad as collected by the Political Ad Collector
-> We are not interested on the HTML tags, we want to check the words and process them. So, let's also eliminate this column.
+> Não estamos interessados nas tags HTML, mas no conteúdo armazenado dentro das tags. Portanto, também iremos eliminar essa coluna.
 
 * **political / not political**: Number of Political Ad Collector users who have voted that the ad is / isn't political
-> Interesting! Let's keep and explore this information.
+> Esses campos informam o número de usuários que votaram como a propaganda sendo política ou não. Esta informação nos parece interessante. Vamos mantê-la e explorá-la mais a frente.
 
 * **title and message**
-> These 2 columns will be the main objects of our analysis!
+> As colunas serão as princiapis colunas que iremos explorar por meio de técnicas de mineração de textos.
 
 * **thumbnail**: Link for a thumbnail of the profile image (of the advertiser)
 > It would be interesting to, maybe, create an image processing tool to explore these images but it's out of the scope of this notebook.
