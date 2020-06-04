@@ -34,7 +34,7 @@ options(warn=-1)
 O objetivo do presente projeto é analisar o teor político de diferentes textos utilizados como propagandas no Facebook. 
 
 Utilizamos uma base de dados presente no Kaggle, que pode ser acessada no [link](https://www.kaggle.com/mrmorj/political-advertisements-from-facebook). Essa base foi originalmente gerada pela ONG de jornalistmo investigativo ProPublica, [página](https://projects.propublica.org/facebook-ads/), direcionada a análise desse tipo de propaganda.
-Essa base foi criada através de numa extensão do navegador, permitindo que cada propaganda de Marketing seja avaliada pelo usuário no browser.
+Ela foi criada através da instalação de numa extensão no navegador do usuário, permitindo que ao receber uma propaganda de Marketing ela possa ser avaliada.
 
 Os insights gerados por esse tipo de estudo podem ser úteis para que tenhamos a capacidade de compreender o que influência um usuário a classificar uma postagem como sendo de natureza política ou não política. 
 Um sistema de classificação do Instituto gera uma probabilidade de que a postagem seja caracterizada como política. No nosso contexto, vamos ignorar tal informação. Consideraremos apenas os textos, as votações realizadas pelos usuários bem como a data da postagem e de atualização da propaganda).
