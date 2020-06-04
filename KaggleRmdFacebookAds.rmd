@@ -31,16 +31,15 @@ knitr::opts_chunk$set(echo = TRUE)
 options(warn=-1)
 ```
 
-O objetivo do presente projeto é o de analisar o teor político de diferentes textos utilizados como propagandas no Facebook. Para isso, utilizaremos uma base de dados presente no Kaggle, que pode ser acessada neste [link](https://www.kaggle.com/mrmorj/political-advertisements-from-facebook).
+O objetivo do presente projeto é analisar o teor político de diferentes textos utilizados como propagandas no Facebook. 
 
-Essa base foi originalmente gerada pela ONG de jornalistmo investigativo ProPublica em uma [página](https://projects.propublica.org/facebook-ads/) direcionada a análise desse tipo de propaganda.
+Utilizamos uma base de dados presente no Kaggle, que pode ser acessada no [link](https://www.kaggle.com/mrmorj/political-advertisements-from-facebook). Essa base foi originalmente gerada pela ONG de jornalistmo investigativo ProPublica, [página](https://projects.propublica.org/facebook-ads/), direcionada a análise desse tipo de propaganda.
+Essa base foi criada através de numa extensão do navegador, permitindo que cada propaganda de Marketing seja avaliada pelo usuário no browser.
 
-Os insights gerados por esse tipo de estudo podem ser úteis para que tenhamos a capacidade de compreender o que leva um usuário a classificar uma postagem como poítica ou como não política: essa base foi criada a partir de uma extensão de navegador do instituto, que permite que votos sejam recebidos para cada mensagem diferente de Marketing recebida pelos browsers.
-
-Com base nisso, um sistema de classificação do Instituto gera uma probabilidade de que a postagem seja política. Em nosso presente contexto, vamos ignorar tal dado. Iremos, com efeito, considerar apenas os textos e as votações dos usuários (além de suas datas de postagem e de atualização).
+Os insights gerados por esse tipo de estudo podem ser úteis para que tenhamos a capacidade de compreender o que influência um usuário a classificar uma postagem como sendo de natureza política ou não política. 
+Um sistema de classificação do Instituto gera uma probabilidade de que a postagem seja caracterizada como política. No nosso contexto, vamos ignorar tal informação. Consideraremos apenas os textos, as votações realizadas pelos usuários bem como a data da postagem e de atualização da propaganda).
 
 Comecemos pela importação das bibliotecas
-
 ```{r}
 library(tidyverse)
 library(DT)
@@ -53,30 +52,30 @@ library(stringi)
 library(RColorBrewer)
 library(textstem)
 library(rmdformats)
-
+```
+Leitura do arquivo
+```{r}
 df_ads <- read_csv('fbpac-ads-en-US.csv')
 print(colnames(df_ads))
 ```
 
-A tabela é extremamente pesada e ocupa $3 GB$ de memória. O seu número de linhas é $162.324$:
-
+A tabela contém uma grande quantidade de informações e ocupa $3 GB$ de memória. O seu número de linhas é $162.324$:
 ```{r}
 nrow(df_ads)
 ```
 
-Precisamos então filtrar tais informações, sem que isso signifique uma perda em nosso poder de análise. Para descobrir como filtrar a tabela de maneira adequada, precisamos, antes de iniciarmos, efetivamente, a análise dos textos, explorar os dados básicos e determinar um procedimento coerente de amostragem.
+Precisamos reduzir a quantidade de informações que iremos trabalhar, sem que isso signifique uma perda em nosso poder de análise. Para descobrir como filtrar a tabela de maneira adequada, precisamos, antes de iniciarmos, efetivamente, a análise dos textos, explorar os dados básicos e determinar um procedimento coerente de amostragem.
 
 # Análise Exploratória Básica de Dados
 
 Iniciaremos filtrando apenas as nossas colunas de interesse:
-
 ```{r}
 cols_list <- c('id', 'title', 'message', 'political', 'not_political', 'created_at', 'updated_at')
 df_ads <- df_ads %>% select(one_of(cols_list))
 datatable(df_ads %>% head(20) %>% select(-message))
 ```
 
-Estamos expondo aqui todas as colunas, à exceção do texto original, pois o texto possui um extenso número de caracteres. Iremos iniciar nossa análise observando a distribuição dos votos de político / não político e verificando quais instantes de tempo (datetimes) temos a nossa disposição. Iniciemos observando o histograma das datas de postagem e de update dos posts:
+Estamos expondo aqui todas as colunas, à exceção do texto original, pois o texto possui um extenso número de caracteres. Iniciaremos nossa análise observando a distribuição dos votos de político / não político e verificando quais instantes de tempo (datetimes) temos a nossa disposição. Iniciemos observando o histograma das datas de postagem e de update dos posts:
 
 ```{r}
 df_dates <- data.frame(
@@ -90,10 +89,11 @@ ggplot(df_dates, aes(x = Data, fill = Tipo)) +
   ylab('Contagem') + ggtitle('Distribuição de Postagens no Tempo')
 ```
 
-Podemos observar que a distribuição das atualizações e criações de novos posts de propaganda são extremamente não uniformes ao longo do tempo. Além disso, tais postagems e atualizações alcançaram um grande pico no final de $2018$ e em meads de maio de $2019$. Não podemos simplesmente filtrar amostras mais recentes para reduzir nosso dataframe pois isso implicaria em suprimir fenômenos importantes que aconteceram no passado e em desbalancear o peso das ocorrências. Assim, chegamos aqui à nossa primeira diretriz:
-> Iremos realizar uma amostragem do dataframe inicial mantendo a mesma distribuição na data de criação (como os dois histogramas são similares, poderíamos também utilizar a atualização como referência sem que isso implicasse em grandes prejuízos).
+Podemos observar que a distribuição das atualizações e criações de novos posts de propaganda são extremamente não uniformes ao longo do tempo. Além disso, tais postagems e atualizações alcançaram um grande pico no final de $2018$ e em meados de maio de $2019$. Não podemos simplesmente filtrar amostras mais recentes para reduzir nosso dataframe, pois isso implicaria em desconsiderar fenômenos relevantes que poderiam ter acontecido no período anterior ou não dar a correta dimensão das suas ocorrências. Assim, chegamos aqui à nossa primeira diretriz:
 
-Precisamos, no entanto, analisar também o teor político ou não político de nossas amostras. Podemos, a princípio, traçar as distribuições desses parâmetros de maneira similar:
+> Realizaremos uma amostragem do dataframe inicial mantendo a mesma distribuição aa data de criação. Já que os dois histogramas são similares, poderíamos também utilizar a atualização como referência sem que isso implicasse em grandes prejuízos).
+
+Precisamos, no entanto, analisar também o teor político ou não político de nossas amostras. A princípio, traçaremos as distribuições desses parâmetros de maneira similar:
 
 ```{r}
 df_votes <- data.frame(
@@ -108,20 +108,20 @@ ggplot(df_votes, aes(x = N.Votos, fill = Tipo)) +
   scale_x_sqrt() + scale_y_sqrt()
 ```
 
-Podemos observar que temos muitas postagens com $0$ votos tanto para "político" quanto para "não político". Porém, podemos observar que postagens que possuem $0$ votos tendem a ser não políticas e quanto mais votos uma postagem recebe, maior é a tendência de a mesma ser "não política". Como estamos falando sobre comparar postagens políticas com postagens não políticas, iremos tentar balancear as amostras com relação a este parâmetro. Logo:
+Observam-se muitas postagens com $0$ votos tanto para "político" quanto para "não político". Porém, postagens que possuem $0$ votos tendem a ser não políticas e quanto mais votos uma postagem recebe, maior é a tendência dela ser de natureza "não política". Como estamos compararando postagens políticas com postagens não políticas, balancearemos as amostras com relação a este parâmetro. Logo:
 
-1. Queremos manter a mesma distribuição do dataframe original no que diz respeito às datas (pois os tópicos são dinâmicos com relação ao tempo).
-2. Queremos balancear com relação a posts políticos e não políticos (pois temos a intenção de diferenciar um tipo de propaganda da outra e, por isso, precisamos de muitas amostras para _ambos_ os casos).
+1. Consideraremos a mesma distribuição dos dados do dataframe original no que diz respeito às datas, pois os tópicos são dinâmicos com relação ao tempo.
+2. Balancearemos os posts políticos e não políticos, pois temos a intenção de diferenciar um tipo de propaganda da outra e, por isso, precisamos equilibrar as amostras para _ambos_ os casos.
 
 Assim, nosso procedimento de amostragem consistirá em:
 
-1. Dividir o dataframe original em dois grupos: (A) um grupo formado pelas propagandas nas quais a maior parte dos votos é político e (B) um grupo formado pelas propagandas nas quais a menor parte dos votos é não política (não iremos considerar postagens nas quais nenhum voto foi realizado).
-2. Para cada uma das amostras obtidas no passo anterior, iremos realizar uma amostragem estratificada com relação ao tempo no qual o post foi criado.
+1. Dividir o dataframe original em dois grupos: (A) um grupo formado pelas propagandas nas quais a maior parte dos votos é político e (B) um grupo formado pelas propagandas nas quais a menor parte dos votos é não política. Não iremos considerar postagens nas quais nenhum voto foi realizado.
+2. Para cada uma das amostras obtidas no passo anterior, realizaremos uma amostragem estratificada com base no tempo o qual o post foi criado.
 
 
-Queremos um número pequeno de amostras para que tenhamos a capacidade computacional de processar os dados seguidamente de forma eficiente. A utilização integral desses dados seria desejável __apenas__ na etapa na qual o sistema seria posto em produção. Iremos obter uma amostra de $4000$ linhas.
+Queremos um número pequeno de amostras para que tenhamos a capacidade computacional de processar os dados seguidamente de forma eficiente, garantindo uma análise apropriada dos fatos encontrados nos dados. A utilização integral desses dados poderia ser desejável na etapa na qual o sistema seria posto em produção. Logo, obteremos uma amostra de $4000$ linhas.
 
-Para isso iremos criar uma variável de estratificação. Ela será composta por dois termos: o tipo de variável (se ela é política ou não política) e o quantil da data considerada (iremos quebrar a data em 10 quantis):
+Para isso criamos uma variável de estratificação. Ela será composta por dois termos: o tipo de variável (se ela é política ou não política) e o quantil da data considerada. Em relação a data será decomposta em 10 quantis:
 
 ```{r}
 df_ads_strat <- df_ads
@@ -135,7 +135,7 @@ df_ads_strat <- df_ads_strat %>% filter(political + not_political > 0)
 df_ads_strat %>% head(10) %>% select(-one_of('message'))
 ```
 
-Agora iremos aplicar uma amostragem estratificada utilizando a variável "strat_group" como grupo de estratificação. Para isso, iremos olhar para cada grupo separadamente e para cada um deles iremos amostrar aleatoriamente $200$ variáveis. Como temos $20$ grupos ($10$ quantis para político e para não político), obteremos, ao final, as $4000$ amostras que desejamos em nosso dataframe reduzido:
+Após a execução, aplicaremos uma amostragem estratificada utilizando a variável "strat_group" como grupo de estratificação. Para cada grupo separadamente e para cada um deles iremos amostrar aleatoriamente $200$ variáveis. Como temos $20$ grupos ($10$ quantis para político e não político), obteremos, ao final, as $4000$ amostras que desejamos em nosso dataframe reduzido:
 
 ```{r}
 id_list <- c()
@@ -154,7 +154,7 @@ Finalmente, podemos iniciar nossa análise de texto com um dataframe reduzido e 
 
 # Limpeza / Mineração de Dados
 
-O pacote de "text mining" (TM) será utilizado pra que obtenhamos um conjunto de textos sem pontuações, números ou palavras que fogem do interesse de nossa análise (como artigos e preposições). Definindo as funções de limpeza de strings:
+O pacote de "text mining" (TM) será utilizado pra que obtenhamos um conjunto de textos sem pontuações, números ou palavras que fogem do interesse de nossa análise (como artigos e preposições) e palavras que não possuem nenhum significado semântico. Também retiramos as tags HTML contidas no texto, possíveis acentuações e hiperlinks. Definindo as funções de limpeza de strings:
 
 ```{r}
 removeHTML <- function(x) (return(gsub('<.*?>', ' ', x)))
@@ -193,7 +193,7 @@ clean_str <- function(df_in, merge_string = TRUE) {
 }
 ```
 
-Definindo uma função para gerar um objeto do tipo "TermDocumentMatrix" com a realização da operação de lematização:
+Definindo uma função para gerar um objeto do tipo "TermDocumentMatrix" com a realização da operação de lematização. Vale ressaltar, que preferimos a utilização da lematização em vez da stemmer, pois a lematização não realizada o truncamento por meio do radical da palavra, possibilitando um melhor entendimento das palavras contidas no contexto:
 
 ```{r}
 get_tdmat <- function(str_in) {
@@ -258,15 +258,15 @@ Com relação às postagens não políticas, a palavra "presente" parece assumir
 A partir dos insights aqui gerados, podemos gerar um conjunto de diferentes grafos para permitir que nossa análise de dados seja enriquecida:
 
 * __A. Grafos de palavras "políticas" e palavras "apolíticas"__
-> São os grafos mais básicos e vai permitir que a gente confira como as entidades se relacionam para cada uma das duas possíveis classificações.
+> São os grafos mais básicos e permitirá que a gente confira como as entidades se relacionam para cada uma das duas possíveis classificações.
 
 * __B. Grafos de Ego__
 > Podemos analisar os dois casos que nos chamaram atenção - para o Wordcloud "apolítico", podemos fazer uma rede ego ao redor de "Trump" e para o wordcloud "apolítico" podemos fazer uma rede de ego ao redor de "Gift" e interpretar os resultados.
 
 * __C. Grafos Bipartides__
-> Uma outra possibilidade que iremos propor é a de um grafo bipartide na qual nós relacionados a palavras podem se ligar a dois nós de outra partição: o nó "POLÍTICO" ou o nó "APOLÍTICO". O peso de ligação entre uma palavra e o nó "POLÍTICO" seria igual ao seu peso na tabela de frequência gerada ao plotar o Wordcloud de palavras de posts políticos e, simetricamente, o peso de ligação entre cada palavra e o nó "APOLÍTICO" seria igual ao seu peso na tabela de frequência do Wordcloud de palavras de posts não políticos.
+> Uma outra possibilidade que propusemos é a de um grafo bipartido cujos nós relacionados a palavras se ligam a dois nós de outra partição: o nó "POLÍTICO" ou o nó "APOLÍTICO". O peso de ligação entre uma palavra e o nó "POLÍTICO" seria igual ao seu peso na tabela de frequência gerada ao plotar o Wordcloud de palavras de posts políticos e, simetricamente, o peso de ligação entre cada palavra e o nó "APOLÍTICO" seria igual ao seu peso na tabela de frequência do Wordcloud de palavras de posts não políticos.
 
-Antes de fazermos essa análise de grafos, iremos classificar as palavras e extrair as entidades por meio da biblioteca SpacyR. Ela permite que encontremos quem é EVENTO, ORGANIZAÇÃO, PESSOA etc. Esse tipo de classificação pode ser especialmente útil no aprimoramento da análise de grafos - podemos, por exemplo, verificar quais EVENTOS se relacionam à palavra TRUMP ou ainda visualizar como entidades do tipo PESSOA se relacionam com entidadesdo tipo ORGANIZAÇÃO.
+Antes de fazermos essa análise de grafos,  classificaremos as palavras e extrairemos as entidades por meio da biblioteca SpacyR. Essa biblioteca permite que encontremos quem sãos os EVENTO, ORGANIZAÇÃO, PESSOA etc. Esse tipo de classificação pode ser especialmente útil no aprimoramento da análise de grafos - podemos, por exemplo, verificar quais EVENTOS se relacionam à palavra TRUMP ou ainda visualizar como entidades do tipo PESSOA se relacionam com entidadesdo tipo ORGANIZAÇÃO.
 
 Assim, iremos manipular a biblioteca SpacyR na próxima seção, preliminarmente à geração dos grafos.
 
@@ -329,7 +329,7 @@ ggplot(df_entity_distrib, aes(x = ent_type, y = freq, fill = type)) +
   
 ```
 
-Aqui tiramos algumas conclusões __muito__ interessantes:
+Aqui tiramos alguns insights que julgamos interessantes:
 
 * Eventos tendem fortemente a ocorrer em postagens que não são políticas
 * Linguagem __sempre__ ou __quase sempre__ (a depender do seed) apareceu em postagens sem teor político
@@ -436,7 +436,7 @@ Isso nos leva a concluir que palavras relacionadas ao partido republicano parece
 
 ![Grafo não político](./not_political_graph_upper.png)
 
-Aqui podemos notar um elevado número de termos, nomes, regiões e locais de natureza latina ou relacionados ao sul dos EUA. Então, aparentemente, indivíduos (como atorese artistas) e organizações relacionadas a esses elementos tendem a, por alguma razão, serem ativos na disseminação de propagandas não políticas do Facebook.
+Aqui, notamos um elevado número de termos, nomes, regiões e locais de natureza latina ou relacionados ao sul dos EUA. Então, aparentemente, indivíduos (como atores e artistas) e organizações relacionadas a esses elementos tendem a, por alguma razão, serem ativos na disseminação de propagandas não políticas do Facebook.
 
 Resumindo, nessa seção concluimos que:
 
@@ -451,7 +451,7 @@ Com isso, podemos prosseguir e desenhar o grafo de ego relacionado a "Donald Tru
 
 # Grafo de EGO: Utilizando a entidade "Donald Trump" como exemplo
 
-Iremos traçar o grafo de ego relacionado a "Donal Trump" a partir do grafo geral criado na seção anterior. Efetuando os ajustes necessários no Gephi, obtemos:
+Iremos traçar o grafo de ego relacionado a "Donal Trump" com base no grafo geral criado na seção anterior. Efetuando os ajustes necessários no Gephi, obtemos:
 
 ![Trump graph](./trump_political_graph.png)
 
