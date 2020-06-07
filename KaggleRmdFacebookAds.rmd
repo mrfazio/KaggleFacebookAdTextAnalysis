@@ -27,6 +27,11 @@ h1,h2,h3,h4,h5,h6,legend{
 </style>
 
 ```{r setup, include=FALSE}
+rm(list=ls() )
+setwd("C:/Users/mrfaz/Documents/GitHub/KaggleFacebookAdTextAnalysis")
+```
+
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 options(warn=-1)
 ```
@@ -421,6 +426,22 @@ Finalmente, com esses arquivos gerados, podemos exibir nosso primeiro par de gra
 Para o caso político:
 
 ![Grafo político](./political_graph.png)
+
+O grau de conexão do grafo político que pode ser avaliado por meio da sua densidade é muito baixo, em torno de 0.008. Menos de 1% das arestas.
+![Grafo político](./political_density.png)
+
+O grau médio informa a quantidade média de entidades do grafo que estão conectas. Conforme visualização da distribuição abaixo, um nó está conectado a aproximadamente a outros 11 outros nós. Pela distribuição é possível verificar que há poucos entidades com muitas conexões e grande maioria das entidades possuem poucas conexões. Um gráfico típico de cauda longa, podemos perceber que há uma formação de hubs, que seriam nós conectados a uma grande quantidade de outros nós.
+![Grafo político](./political_avg_degree.png)
+
+Também podemos detectar a quantidade de comunidades, para isso podemos utilizar a função estatística de modularidade que nos informará a quantidade de grupos que será criado.
+Neste gráfico, o algoritmo detectou 53 grupos.
+![Grafo político](./political_modularity.png)
+
+Também podemos utilizar uma outra análise por meio da métrica de centralidade betweeness para analisar quais entidades se conectam aos outros grupos relacionados a outras entidades.
+![Grafo político](./political_betweeness.png)
+
+
+
 
 Para o caso não político, temos que analisar o grafo com mais paciência. Quando realizamos a plotagem do grafo, foi possível identificar a presença de "dois grandes grupos" ao organizarmos os nós por meio do algoritmo de Force Atlas:
 
