@@ -504,7 +504,7 @@ No grupo vermelho, a entidade que mais se destaca como popular é o "senate". Po
 
 ![Grafo político](./political_red_2.png)
 
-No grupo azul, a palavra mais popular é congresso. Encontramos entidades tai como medicare, que é o sistema do governo de plano de saúde para pessoas acima de 65 anos e para pessoas com algum tipo de deficiência; Donal Trump - Presidente dos Eua e Robert Mueller que terminou seu trabalho como diretor do FBI investigando interferência russa na eleição de 2016 como procurador especial do Departamento de Justiça. Donalt Trump e Robert Mueller  se envolveram num processo de pedido de impeachment do presidente Donald Trump feito pelo congresso requisitando seu afastamento do cargo que foi posteriormente barrado no senado, o qual o presidente tem maior apoio de sua bancada.
+No grupo azul, a palavra mais popular é congress. Encontramos entidades tais como medicare, que é o sistema do governo de plano de saúde para pessoas acima de 65 anos e para pessoas com algum tipo de deficiência; Donal Trump - Presidente dos Eua e Robert Mueller que terminou seu trabalho como diretor do FBI investigando interferência russa na eleição de 2016 como procurador especial do Departamento de Justiça. Donalt Trump e Robert Mueller  se envolveram num processo de pedido de impeachment do presidente Donald Trump feito pelo congresso requisitando seu afastamento do cargo que foi posteriormente barrado no senado, o qual o presidente tem maior apoio de sua bancada.
 
 ![Grafo político](./political_blue.png)
 
