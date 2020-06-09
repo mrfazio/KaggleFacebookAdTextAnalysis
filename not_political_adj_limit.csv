@@ -1,0 +1,4216 @@
+node1,node2
+pac,kim
+pac,congress
+kim,congress
+northwest iowa group,sierra club
+northwest iowa group,jess mazour
+northwest iowa group,sierra club
+northwest iowa group,northwest iowa group sierra club
+sierra club,jess mazour
+sierra club,sierra club
+sierra club,northwest iowa group sierra club
+jess mazour,sierra club
+jess mazour,northwest iowa group sierra club
+sierra club,northwest iowa group sierra club
+sandy hook,butterfly dylan
+sandy hook,dylan
+butterfly dylan,dylan
+lisa murkowski,supreme court
+lisa murkowski,brett kavanaugh
+supreme court,brett kavanaugh
+fox,fox news
+fox,fox sports
+fox,fox point
+fox,fox
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,bill penzey
+fox,fox point
+fox news,fox sports
+fox news,fox point
+fox news,fox
+fox news,fox news
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox sports,fox point
+fox sports,fox
+fox sports,fox news
+fox sports,fox sports
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+fox point,fox
+fox point,fox news
+fox point,fox sports
+fox point,rupert murdoch
+fox point,roger
+fox point,fox broadcasting            
+fox point,fox news
+fox point,fox
+fox point,nfl
+fox point,republican party
+fox point,edwin starr song war
+fox point,nike
+fox point,nfl
+fox point,fox point
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,bill penzey
+fox,fox point
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+rupert murdoch,roger
+rupert murdoch,fox broadcasting            
+rupert murdoch,fox news
+rupert murdoch,fox
+rupert murdoch,nfl
+rupert murdoch,republican party
+rupert murdoch,edwin starr song war
+rupert murdoch,nike
+rupert murdoch,nfl
+rupert murdoch,fox point
+rupert murdoch,nfl
+rupert murdoch,navajo
+rupert murdoch,nfl
+rupert murdoch,google
+rupert murdoch,fox
+rupert murdoch,bill penzey
+rupert murdoch,fox point
+roger,fox broadcasting            
+roger,fox news
+roger,fox
+roger,nfl
+roger,republican party
+roger,edwin starr song war
+roger,nike
+roger,nfl
+roger,fox point
+roger,nfl
+roger,navajo
+roger,nfl
+roger,google
+roger,fox
+roger,bill penzey
+roger,fox point
+fox broadcasting            ,fox news
+fox broadcasting            ,fox
+fox broadcasting            ,nfl
+fox broadcasting            ,republican party
+fox broadcasting            ,edwin starr song war
+fox broadcasting            ,nike
+fox broadcasting            ,nfl
+fox broadcasting            ,fox point
+fox broadcasting            ,nfl
+fox broadcasting            ,navajo
+fox broadcasting            ,nfl
+fox broadcasting            ,google
+fox broadcasting            ,fox
+fox broadcasting            ,bill penzey
+fox broadcasting            ,fox point
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,bill penzey
+fox,fox point
+nfl,republican party
+nfl,edwin starr song war
+nfl,nike
+nfl,nfl
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+republican party,edwin starr song war
+republican party,nike
+republican party,nfl
+republican party,fox point
+republican party,nfl
+republican party,navajo
+republican party,nfl
+republican party,google
+republican party,fox
+republican party,bill penzey
+republican party,fox point
+edwin starr song war,nike
+edwin starr song war,nfl
+edwin starr song war,fox point
+edwin starr song war,nfl
+edwin starr song war,navajo
+edwin starr song war,nfl
+edwin starr song war,google
+edwin starr song war,fox
+edwin starr song war,bill penzey
+edwin starr song war,fox point
+nike,nfl
+nike,fox point
+nike,nfl
+nike,navajo
+nike,nfl
+nike,google
+nike,fox
+nike,bill penzey
+nike,fox point
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+navajo,nfl
+navajo,google
+navajo,fox
+navajo,bill penzey
+navajo,fox point
+nfl,google
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+google,fox
+google,bill penzey
+google,fox point
+fox,bill penzey
+fox,fox point
+bill penzey,fox point
+city council,ramos councilman
+city council,defusco councilwoman
+city council,councilwoman falco councilwoman
+city council,jabbour councilwoman
+city council,russo
+ramos councilman,defusco councilwoman
+ramos councilman,councilwoman falco councilwoman
+ramos councilman,jabbour councilwoman
+ramos councilman,russo
+defusco councilwoman,councilwoman falco councilwoman
+defusco councilwoman,jabbour councilwoman
+defusco councilwoman,russo
+councilwoman falco councilwoman,jabbour councilwoman
+councilwoman falco councilwoman,russo
+jabbour councilwoman,russo
+khan academy,anjali
+khan academy,khan academy       
+khan academy,anjali
+anjali,khan academy       
+anjali,anjali
+khan academy       ,anjali
+sierra club,interior
+sierra club,ryan zinke
+interior,ryan zinke
+fox,fox news
+fox,fox sports
+fox,fox point
+fox,fox
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox sports
+fox news,fox point
+fox news,fox
+fox news,fox news
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox sports,fox point
+fox sports,fox
+fox sports,fox news
+fox sports,fox sports
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,fox
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+fox sports,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,fox
+fox point,fox news
+fox point,fox sports
+fox point,rupert murdoch
+fox point,roger
+fox point,fox broadcasting            
+fox point,fox news
+fox point,fox
+fox point,nfl
+fox point,republican party
+fox point,edwin starr song war
+fox point,nike
+fox point,nfl
+fox point,fox point
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,fox
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,fox
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+fox sports,cakes   wwwpenzeysshoprecipesmamacrabcakes
+rupert murdoch,roger
+rupert murdoch,fox broadcasting            
+rupert murdoch,fox news
+rupert murdoch,fox
+rupert murdoch,nfl
+rupert murdoch,republican party
+rupert murdoch,edwin starr song war
+rupert murdoch,nike
+rupert murdoch,nfl
+rupert murdoch,fox point
+rupert murdoch,nfl
+rupert murdoch,navajo
+rupert murdoch,nfl
+rupert murdoch,google
+rupert murdoch,fox
+rupert murdoch,fox
+rupert murdoch,fox
+rupert murdoch,bill penzey
+rupert murdoch,fox point
+rupert murdoch,cakes   wwwpenzeysshoprecipesmamacrabcakes
+roger,fox broadcasting            
+roger,fox news
+roger,fox
+roger,nfl
+roger,republican party
+roger,edwin starr song war
+roger,nike
+roger,nfl
+roger,fox point
+roger,nfl
+roger,navajo
+roger,nfl
+roger,google
+roger,fox
+roger,fox
+roger,fox
+roger,bill penzey
+roger,fox point
+roger,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox broadcasting            ,fox news
+fox broadcasting            ,fox
+fox broadcasting            ,nfl
+fox broadcasting            ,republican party
+fox broadcasting            ,edwin starr song war
+fox broadcasting            ,nike
+fox broadcasting            ,nfl
+fox broadcasting            ,fox point
+fox broadcasting            ,nfl
+fox broadcasting            ,navajo
+fox broadcasting            ,nfl
+fox broadcasting            ,google
+fox broadcasting            ,fox
+fox broadcasting            ,fox
+fox broadcasting            ,fox
+fox broadcasting            ,bill penzey
+fox broadcasting            ,fox point
+fox broadcasting            ,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,republican party
+nfl,edwin starr song war
+nfl,nike
+nfl,nfl
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+republican party,edwin starr song war
+republican party,nike
+republican party,nfl
+republican party,fox point
+republican party,nfl
+republican party,navajo
+republican party,nfl
+republican party,google
+republican party,fox
+republican party,fox
+republican party,fox
+republican party,bill penzey
+republican party,fox point
+republican party,cakes   wwwpenzeysshoprecipesmamacrabcakes
+edwin starr song war,nike
+edwin starr song war,nfl
+edwin starr song war,fox point
+edwin starr song war,nfl
+edwin starr song war,navajo
+edwin starr song war,nfl
+edwin starr song war,google
+edwin starr song war,fox
+edwin starr song war,fox
+edwin starr song war,fox
+edwin starr song war,bill penzey
+edwin starr song war,fox point
+edwin starr song war,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nike,nfl
+nike,fox point
+nike,nfl
+nike,navajo
+nike,nfl
+nike,google
+nike,fox
+nike,fox
+nike,fox
+nike,bill penzey
+nike,fox point
+nike,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,fox
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+navajo,nfl
+navajo,google
+navajo,fox
+navajo,fox
+navajo,fox
+navajo,bill penzey
+navajo,fox point
+navajo,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+google,fox
+google,fox
+google,fox
+google,bill penzey
+google,fox point
+google,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+bill penzey,fox point
+bill penzey,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox news
+fox,fox sports
+fox,fox point
+fox,fox
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox sports
+fox news,fox point
+fox news,fox
+fox news,fox news
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox sports,fox point
+fox sports,fox
+fox sports,fox news
+fox sports,fox sports
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,fox
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+fox sports,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,fox
+fox point,fox news
+fox point,fox sports
+fox point,rupert murdoch
+fox point,roger
+fox point,fox broadcasting            
+fox point,fox news
+fox point,fox
+fox point,nfl
+fox point,republican party
+fox point,edwin starr song war
+fox point,nike
+fox point,nfl
+fox point,fox point
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,fox
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox news
+fox,fox sports
+fox,rupert murdoch
+fox,roger
+fox,fox broadcasting            
+fox,fox news
+fox,fox
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox sports
+fox news,rupert murdoch
+fox news,roger
+fox news,fox broadcasting            
+fox news,fox news
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox sports,rupert murdoch
+fox sports,roger
+fox sports,fox broadcasting            
+fox sports,fox news
+fox sports,fox
+fox sports,nfl
+fox sports,republican party
+fox sports,edwin starr song war
+fox sports,nike
+fox sports,nfl
+fox sports,fox point
+fox sports,nfl
+fox sports,navajo
+fox sports,nfl
+fox sports,google
+fox sports,fox
+fox sports,fox
+fox sports,fox
+fox sports,bill penzey
+fox sports,fox point
+fox sports,cakes   wwwpenzeysshoprecipesmamacrabcakes
+rupert murdoch,roger
+rupert murdoch,fox broadcasting            
+rupert murdoch,fox news
+rupert murdoch,fox
+rupert murdoch,nfl
+rupert murdoch,republican party
+rupert murdoch,edwin starr song war
+rupert murdoch,nike
+rupert murdoch,nfl
+rupert murdoch,fox point
+rupert murdoch,nfl
+rupert murdoch,navajo
+rupert murdoch,nfl
+rupert murdoch,google
+rupert murdoch,fox
+rupert murdoch,fox
+rupert murdoch,fox
+rupert murdoch,bill penzey
+rupert murdoch,fox point
+rupert murdoch,cakes   wwwpenzeysshoprecipesmamacrabcakes
+roger,fox broadcasting            
+roger,fox news
+roger,fox
+roger,nfl
+roger,republican party
+roger,edwin starr song war
+roger,nike
+roger,nfl
+roger,fox point
+roger,nfl
+roger,navajo
+roger,nfl
+roger,google
+roger,fox
+roger,fox
+roger,fox
+roger,bill penzey
+roger,fox point
+roger,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox broadcasting            ,fox news
+fox broadcasting            ,fox
+fox broadcasting            ,nfl
+fox broadcasting            ,republican party
+fox broadcasting            ,edwin starr song war
+fox broadcasting            ,nike
+fox broadcasting            ,nfl
+fox broadcasting            ,fox point
+fox broadcasting            ,nfl
+fox broadcasting            ,navajo
+fox broadcasting            ,nfl
+fox broadcasting            ,google
+fox broadcasting            ,fox
+fox broadcasting            ,fox
+fox broadcasting            ,fox
+fox broadcasting            ,bill penzey
+fox broadcasting            ,fox point
+fox broadcasting            ,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox news,fox
+fox news,fox
+fox news,fox
+fox news,bill penzey
+fox news,fox point
+fox news,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+fox,fox
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,republican party
+nfl,edwin starr song war
+nfl,nike
+nfl,nfl
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+republican party,edwin starr song war
+republican party,nike
+republican party,nfl
+republican party,fox point
+republican party,nfl
+republican party,navajo
+republican party,nfl
+republican party,google
+republican party,fox
+republican party,fox
+republican party,fox
+republican party,bill penzey
+republican party,fox point
+republican party,cakes   wwwpenzeysshoprecipesmamacrabcakes
+edwin starr song war,nike
+edwin starr song war,nfl
+edwin starr song war,fox point
+edwin starr song war,nfl
+edwin starr song war,navajo
+edwin starr song war,nfl
+edwin starr song war,google
+edwin starr song war,fox
+edwin starr song war,fox
+edwin starr song war,fox
+edwin starr song war,bill penzey
+edwin starr song war,fox point
+edwin starr song war,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nike,nfl
+nike,fox point
+nike,nfl
+nike,navajo
+nike,nfl
+nike,google
+nike,fox
+nike,fox
+nike,fox
+nike,bill penzey
+nike,fox point
+nike,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+fox point,fox
+fox point,fox
+fox point,fox
+fox point,bill penzey
+fox point,fox point
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,navajo
+nfl,nfl
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+navajo,nfl
+navajo,google
+navajo,fox
+navajo,fox
+navajo,fox
+navajo,bill penzey
+navajo,fox point
+navajo,cakes   wwwpenzeysshoprecipesmamacrabcakes
+nfl,google
+nfl,fox
+nfl,fox
+nfl,fox
+nfl,bill penzey
+nfl,fox point
+nfl,cakes   wwwpenzeysshoprecipesmamacrabcakes
+google,fox
+google,fox
+google,fox
+google,bill penzey
+google,fox point
+google,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,fox
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox,bill penzey
+fox,fox point
+fox,cakes   wwwpenzeysshoprecipesmamacrabcakes
+bill penzey,fox point
+bill penzey,cakes   wwwpenzeysshoprecipesmamacrabcakes
+fox point,cakes   wwwpenzeysshoprecipesmamacrabcakes
+national park foundation,national park foundation
+national park foundation,national park foundation
+national park foundation,national park foundation
+amp kindness,republican party
+amp kindness,wisconsin    test ground    
+amp kindness,white house
+amp kindness,galena
+amp kindness,republican party
+amp kindness,republican party
+amp kindness,garlicky mitchell street
+amp kindness,spicespenzeyscouponhtml
+amp kindness,mitchell
+amp kindness,tammy baldwin
+amp kindness,bill penzey
+republican party,wisconsin    test ground    
+republican party,white house
+republican party,galena
+republican party,republican party
+republican party,republican party
+republican party,garlicky mitchell street
+republican party,spicespenzeyscouponhtml
+republican party,mitchell
+republican party,tammy baldwin
+republican party,bill penzey
+wisconsin    test ground    ,white house
+wisconsin    test ground    ,galena
+wisconsin    test ground    ,republican party
+wisconsin    test ground    ,republican party
+wisconsin    test ground    ,garlicky mitchell street
+wisconsin    test ground    ,spicespenzeyscouponhtml
+wisconsin    test ground    ,mitchell
+wisconsin    test ground    ,tammy baldwin
+wisconsin    test ground    ,bill penzey
+white house,galena
+white house,republican party
+white house,republican party
+white house,garlicky mitchell street
+white house,spicespenzeyscouponhtml
+white house,mitchell
+white house,tammy baldwin
+white house,bill penzey
+galena,republican party
+galena,republican party
+galena,garlicky mitchell street
+galena,spicespenzeyscouponhtml
+galena,mitchell
+galena,tammy baldwin
+galena,bill penzey
+republican party,republican party
+republican party,garlicky mitchell street
+republican party,spicespenzeyscouponhtml
+republican party,mitchell
+republican party,tammy baldwin
+republican party,bill penzey
+republican party,garlicky mitchell street
+republican party,spicespenzeyscouponhtml
+republican party,mitchell
+republican party,tammy baldwin
+republican party,bill penzey
+garlicky mitchell street,spicespenzeyscouponhtml
+garlicky mitchell street,mitchell
+garlicky mitchell street,tammy baldwin
+garlicky mitchell street,bill penzey
+spicespenzeyscouponhtml,mitchell
+spicespenzeyscouponhtml,tammy baldwin
+spicespenzeyscouponhtml,bill penzey
+mitchell,tammy baldwin
+mitchell,bill penzey
+tammy baldwin,bill penzey
+span,kavanaugh      scotus
+span,span supreme court
+kavanaugh      scotus,span supreme court
+kelda helen,republican party
+kelda helen,garlicky mitchell street
+kelda helen,wwwpenzeysmitchellstreetpd
+kelda helen,spicespenzeyscouponhtml
+kelda helen,mitchell
+kelda helen,republican party
+kelda helen,white house
+kelda helen,republican party
+kelda helen,republican party
+kelda helen,kelda
+kelda helen,tammy baldwin   
+kelda helen,baldwin   
+republican party,garlicky mitchell street
+republican party,wwwpenzeysmitchellstreetpd
+republican party,spicespenzeyscouponhtml
+republican party,mitchell
+republican party,republican party
+republican party,white house
+republican party,republican party
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+garlicky mitchell street,wwwpenzeysmitchellstreetpd
+garlicky mitchell street,spicespenzeyscouponhtml
+garlicky mitchell street,mitchell
+garlicky mitchell street,republican party
+garlicky mitchell street,white house
+garlicky mitchell street,republican party
+garlicky mitchell street,republican party
+garlicky mitchell street,kelda
+garlicky mitchell street,tammy baldwin   
+garlicky mitchell street,baldwin   
+wwwpenzeysmitchellstreetpd,spicespenzeyscouponhtml
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,white house
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,kelda
+wwwpenzeysmitchellstreetpd,tammy baldwin   
+wwwpenzeysmitchellstreetpd,baldwin   
+spicespenzeyscouponhtml,mitchell
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,white house
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,kelda
+spicespenzeyscouponhtml,tammy baldwin   
+spicespenzeyscouponhtml,baldwin   
+mitchell,republican party
+mitchell,white house
+mitchell,republican party
+mitchell,republican party
+mitchell,kelda
+mitchell,tammy baldwin   
+mitchell,baldwin   
+republican party,white house
+republican party,republican party
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+white house,republican party
+white house,republican party
+white house,kelda
+white house,tammy baldwin   
+white house,baldwin   
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+kelda,tammy baldwin   
+kelda,baldwin   
+tammy baldwin   ,baldwin   
+amnesty international usa,congress
+amnesty international usa,congress
+congress,congress
+nixon,bob woodward
+nixon,donald trump
+nixon,white house
+bob woodward,donald trump
+bob woodward,white house
+donald trump,white house
+national democratic training committee,msnbc
+national democratic training committee,msnbc
+national democratic training committee,fox news
+national democratic training committee,msnbc
+msnbc,msnbc
+msnbc,fox news
+msnbc,msnbc
+msnbc,fox news
+msnbc,msnbc
+fox news,msnbc
+rupert murdoch,roger
+rupert murdoch,fox broadcasting            
+rupert murdoch,fox news
+rupert murdoch,fox
+rupert murdoch,nfl
+rupert murdoch,republican party
+rupert murdoch,edwin starr song war
+rupert murdoch,nike
+rupert murdoch,nfl
+rupert murdoch,fox point
+rupert murdoch,nfl
+rupert murdoch,navajo
+rupert murdoch,nfl
+rupert murdoch,google
+roger,fox broadcasting            
+roger,fox news
+roger,fox
+roger,nfl
+roger,republican party
+roger,edwin starr song war
+roger,nike
+roger,nfl
+roger,fox point
+roger,nfl
+roger,navajo
+roger,nfl
+roger,google
+fox broadcasting            ,fox news
+fox broadcasting            ,fox
+fox broadcasting            ,nfl
+fox broadcasting            ,republican party
+fox broadcasting            ,edwin starr song war
+fox broadcasting            ,nike
+fox broadcasting            ,nfl
+fox broadcasting            ,fox point
+fox broadcasting            ,nfl
+fox broadcasting            ,navajo
+fox broadcasting            ,nfl
+fox broadcasting            ,google
+fox news,fox
+fox news,nfl
+fox news,republican party
+fox news,edwin starr song war
+fox news,nike
+fox news,nfl
+fox news,fox point
+fox news,nfl
+fox news,navajo
+fox news,nfl
+fox news,google
+fox,nfl
+fox,republican party
+fox,edwin starr song war
+fox,nike
+fox,nfl
+fox,fox point
+fox,nfl
+fox,navajo
+fox,nfl
+fox,google
+nfl,republican party
+nfl,edwin starr song war
+nfl,nike
+nfl,nfl
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+republican party,edwin starr song war
+republican party,nike
+republican party,nfl
+republican party,fox point
+republican party,nfl
+republican party,navajo
+republican party,nfl
+republican party,google
+edwin starr song war,nike
+edwin starr song war,nfl
+edwin starr song war,fox point
+edwin starr song war,nfl
+edwin starr song war,navajo
+edwin starr song war,nfl
+edwin starr song war,google
+nike,nfl
+nike,fox point
+nike,nfl
+nike,navajo
+nike,nfl
+nike,google
+nfl,fox point
+nfl,nfl
+nfl,navajo
+nfl,nfl
+nfl,google
+fox point,nfl
+fox point,navajo
+fox point,nfl
+fox point,google
+nfl,navajo
+nfl,nfl
+nfl,google
+navajo,nfl
+navajo,google
+nfl,google
+state forest,dis   
+state forest,state forest
+dis   ,state forest
+outfront minnesota,cm andrea jenkins
+outfront minnesota,cm phillipe cunningham
+cm andrea jenkins,cm phillipe cunningham
+moveon,beto rourke
+moveon,joe biden
+beto rourke,joe biden
+fox news   ,fox
+fox news   ,fox
+fox news   ,fox news
+fox news   ,robert mueller
+fox news   ,robert mueller
+fox news   ,fox
+fox news   ,fox news
+fox news   ,fox news
+fox news   ,fox news
+fox news   ,fox    republican party
+fox news   ,fox
+fox news   ,kremlin
+fox news   ,fox news
+fox news   ,fox
+fox news   ,fox
+fox news   ,wwwpenzeysonlinecattsardustmemoriespd       
+fox news   ,fox point
+fox news   ,fox
+fox news   ,fox
+fox news   ,cook
+fox news   ,fox news
+fox,fox
+fox,fox news
+fox,robert mueller
+fox,robert mueller
+fox,fox
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+fox,fox news
+fox,robert mueller
+fox,robert mueller
+fox,fox
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+fox news,robert mueller
+fox news,robert mueller
+fox news,fox
+fox news,fox news
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd       
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,cook
+fox news,fox news
+robert mueller,robert mueller
+robert mueller,fox
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox    republican party
+robert mueller,fox
+robert mueller,kremlin
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox
+robert mueller,wwwpenzeysonlinecattsardustmemoriespd       
+robert mueller,fox point
+robert mueller,fox
+robert mueller,fox
+robert mueller,cook
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox    republican party
+robert mueller,fox
+robert mueller,kremlin
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox
+robert mueller,wwwpenzeysonlinecattsardustmemoriespd       
+robert mueller,fox point
+robert mueller,fox
+robert mueller,fox
+robert mueller,cook
+robert mueller,fox news
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd       
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,cook
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd       
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,cook
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd       
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,cook
+fox news,fox news
+fox    republican party,fox
+fox    republican party,kremlin
+fox    republican party,fox news
+fox    republican party,fox
+fox    republican party,fox
+fox    republican party,wwwpenzeysonlinecattsardustmemoriespd       
+fox    republican party,fox point
+fox    republican party,fox
+fox    republican party,fox
+fox    republican party,cook
+fox    republican party,fox news
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+kremlin,fox news
+kremlin,fox
+kremlin,fox
+kremlin,wwwpenzeysonlinecattsardustmemoriespd       
+kremlin,fox point
+kremlin,fox
+kremlin,fox
+kremlin,cook
+kremlin,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd       
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,cook
+fox news,fox news
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+fox,wwwpenzeysonlinecattsardustmemoriespd       
+fox,fox point
+fox,fox
+fox,fox
+fox,cook
+fox,fox news
+wwwpenzeysonlinecattsardustmemoriespd       ,fox point
+wwwpenzeysonlinecattsardustmemoriespd       ,fox
+wwwpenzeysonlinecattsardustmemoriespd       ,fox
+wwwpenzeysonlinecattsardustmemoriespd       ,cook
+wwwpenzeysonlinecattsardustmemoriespd       ,fox news
+fox point,fox
+fox point,fox
+fox point,cook
+fox point,fox news
+fox,fox
+fox,cook
+fox,fox news
+fox,cook
+fox,fox news
+cook,fox news
+moveon,congress
+moveon,medicaid
+moveon,social security       
+moveon,moveon
+moveon,gop
+moveon,congress
+congress,medicaid
+congress,social security       
+congress,moveon
+congress,gop
+congress,congress
+medicaid,social security       
+medicaid,moveon
+medicaid,gop
+medicaid,congress
+social security       ,moveon
+social security       ,gop
+social security       ,congress
+moveon,gop
+moveon,congress
+gop,congress
+aspca,aspca    ground
+aspca,michael
+aspca    ground,michael
+john mccain,republican party
+john mccain,republican party
+john mccain,abraham lincoln
+john mccain,republican party
+john mccain,teddy roosevelt
+john mccain,john mccain
+john mccain,republican party
+john mccain,ronald reagan
+john mccain,mccain    
+john mccain,spicespenzeyscouponhtml    
+john mccain,wisconsin republican party
+republican party,republican party
+republican party,abraham lincoln
+republican party,republican party
+republican party,teddy roosevelt
+republican party,john mccain
+republican party,republican party
+republican party,ronald reagan
+republican party,mccain    
+republican party,spicespenzeyscouponhtml    
+republican party,wisconsin republican party
+republican party,abraham lincoln
+republican party,republican party
+republican party,teddy roosevelt
+republican party,john mccain
+republican party,republican party
+republican party,ronald reagan
+republican party,mccain    
+republican party,spicespenzeyscouponhtml    
+republican party,wisconsin republican party
+abraham lincoln,republican party
+abraham lincoln,teddy roosevelt
+abraham lincoln,john mccain
+abraham lincoln,republican party
+abraham lincoln,ronald reagan
+abraham lincoln,mccain    
+abraham lincoln,spicespenzeyscouponhtml    
+abraham lincoln,wisconsin republican party
+republican party,teddy roosevelt
+republican party,john mccain
+republican party,republican party
+republican party,ronald reagan
+republican party,mccain    
+republican party,spicespenzeyscouponhtml    
+republican party,wisconsin republican party
+teddy roosevelt,john mccain
+teddy roosevelt,republican party
+teddy roosevelt,ronald reagan
+teddy roosevelt,mccain    
+teddy roosevelt,spicespenzeyscouponhtml    
+teddy roosevelt,wisconsin republican party
+john mccain,republican party
+john mccain,ronald reagan
+john mccain,mccain    
+john mccain,spicespenzeyscouponhtml    
+john mccain,wisconsin republican party
+republican party,ronald reagan
+republican party,mccain    
+republican party,spicespenzeyscouponhtml    
+republican party,wisconsin republican party
+ronald reagan,mccain    
+ronald reagan,spicespenzeyscouponhtml    
+ronald reagan,wisconsin republican party
+mccain    ,spicespenzeyscouponhtml    
+mccain    ,wisconsin republican party
+spicespenzeyscouponhtml    ,wisconsin republican party
+republican party,republican party
+republican party,republican party
+republican party,chili    great chili powder
+republican party,chili   chili
+republican party,chili flavor           home
+republican party,cook chili
+republican party,chili
+republican party,spicespenzeyscouponhtml    
+republican party,chili    chili      place
+republican party,republican party
+republican party,republican party
+republican party,chili    great chili powder
+republican party,chili   chili
+republican party,chili flavor           home
+republican party,cook chili
+republican party,chili
+republican party,spicespenzeyscouponhtml    
+republican party,chili    chili      place
+republican party,republican party
+republican party,chili    great chili powder
+republican party,chili   chili
+republican party,chili flavor           home
+republican party,cook chili
+republican party,chili
+republican party,spicespenzeyscouponhtml    
+republican party,chili    chili      place
+republican party,republican party
+chili    great chili powder,chili   chili
+chili    great chili powder,chili flavor           home
+chili    great chili powder,cook chili
+chili    great chili powder,chili
+chili    great chili powder,spicespenzeyscouponhtml    
+chili    great chili powder,chili    chili      place
+chili    great chili powder,republican party
+chili   chili,chili flavor           home
+chili   chili,cook chili
+chili   chili,chili
+chili   chili,spicespenzeyscouponhtml    
+chili   chili,chili    chili      place
+chili   chili,republican party
+chili flavor           home,cook chili
+chili flavor           home,chili
+chili flavor           home,spicespenzeyscouponhtml    
+chili flavor           home,chili    chili      place
+chili flavor           home,republican party
+cook chili,chili
+cook chili,spicespenzeyscouponhtml    
+cook chili,chili    chili      place
+cook chili,republican party
+chili,spicespenzeyscouponhtml    
+chili,chili    chili      place
+chili,republican party
+spicespenzeyscouponhtml    ,chili    chili      place
+spicespenzeyscouponhtml    ,republican party
+chili    chili      place,republican party
+manchester heritage commission,manchester va medical center
+manchester heritage commission,manchester heritage commission
+manchester heritage commission,veterans affairs medical center
+manchester heritage commission,manchester  
+manchester heritage commission,jewel   
+manchester heritage commission,va medical center
+manchester heritage commission,manchester heritage commission
+manchester heritage commission,walter
+manchester va medical center,manchester heritage commission
+manchester va medical center,veterans affairs medical center
+manchester va medical center,manchester  
+manchester va medical center,jewel   
+manchester va medical center,va medical center
+manchester va medical center,manchester heritage commission
+manchester va medical center,walter
+manchester heritage commission,veterans affairs medical center
+manchester heritage commission,manchester  
+manchester heritage commission,jewel   
+manchester heritage commission,va medical center
+manchester heritage commission,manchester heritage commission
+manchester heritage commission,walter
+veterans affairs medical center,manchester  
+veterans affairs medical center,jewel   
+veterans affairs medical center,va medical center
+veterans affairs medical center,manchester heritage commission
+veterans affairs medical center,walter
+manchester  ,jewel   
+manchester  ,va medical center
+manchester  ,manchester heritage commission
+manchester  ,walter
+jewel   ,va medical center
+jewel   ,manchester heritage commission
+jewel   ,walter
+va medical center,manchester heritage commission
+va medical center,walter
+manchester heritage commission,walter
+dan,dan baer
+dan,senate
+dan,fed
+dan baer,senate
+dan baer,fed
+senate,fed
+halfcup jar,spicespenzeyscouponhtml      
+halfcup jar,senate
+halfcup jar,supreme court
+halfcup jar,republican party
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+spicespenzeyscouponhtml      ,senate
+spicespenzeyscouponhtml      ,supreme court
+spicespenzeyscouponhtml      ,republican party
+spicespenzeyscouponhtml      ,halfcup jar
+spicespenzeyscouponhtml      ,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+aurora veterans advisory council,richard
+aurora veterans advisory council,linda chapa
+aurora veterans advisory council,lavia state
+aurora veterans advisory council,stephanie kifowit
+aurora veterans advisory council,anna gonzales
+aurora veterans advisory council,richard
+aurora veterans advisory council,united states army
+aurora veterans advisory council,bell
+aurora veterans advisory council,erik pettyjohn
+aurora veterans advisory council,air force jrotc
+aurora veterans advisory council,erik pettyjohn    
+aurora veterans advisory council,air force
+aurora veterans advisory council,united states air force pettyjohn
+aurora veterans advisory council,air force
+aurora veterans advisory council,squadron
+aurora veterans advisory council,champaignurbana
+aurora veterans advisory council,aurora university
+aurora veterans advisory council,joe dryden
+aurora veterans advisory council,aurora historical
+richard,linda chapa
+richard,lavia state
+richard,stephanie kifowit
+richard,anna gonzales
+richard,richard
+richard,united states army
+richard,bell
+richard,erik pettyjohn
+richard,air force jrotc
+richard,erik pettyjohn    
+richard,air force
+richard,united states air force pettyjohn
+richard,air force
+richard,squadron
+richard,champaignurbana
+richard,aurora university
+richard,joe dryden
+richard,aurora historical
+linda chapa,lavia state
+linda chapa,stephanie kifowit
+linda chapa,anna gonzales
+linda chapa,richard
+linda chapa,united states army
+linda chapa,bell
+linda chapa,erik pettyjohn
+linda chapa,air force jrotc
+linda chapa,erik pettyjohn    
+linda chapa,air force
+linda chapa,united states air force pettyjohn
+linda chapa,air force
+linda chapa,squadron
+linda chapa,champaignurbana
+linda chapa,aurora university
+linda chapa,joe dryden
+linda chapa,aurora historical
+lavia state,stephanie kifowit
+lavia state,anna gonzales
+lavia state,richard
+lavia state,united states army
+lavia state,bell
+lavia state,erik pettyjohn
+lavia state,air force jrotc
+lavia state,erik pettyjohn    
+lavia state,air force
+lavia state,united states air force pettyjohn
+lavia state,air force
+lavia state,squadron
+lavia state,champaignurbana
+lavia state,aurora university
+lavia state,joe dryden
+lavia state,aurora historical
+stephanie kifowit,anna gonzales
+stephanie kifowit,richard
+stephanie kifowit,united states army
+stephanie kifowit,bell
+stephanie kifowit,erik pettyjohn
+stephanie kifowit,air force jrotc
+stephanie kifowit,erik pettyjohn    
+stephanie kifowit,air force
+stephanie kifowit,united states air force pettyjohn
+stephanie kifowit,air force
+stephanie kifowit,squadron
+stephanie kifowit,champaignurbana
+stephanie kifowit,aurora university
+stephanie kifowit,joe dryden
+stephanie kifowit,aurora historical
+anna gonzales,richard
+anna gonzales,united states army
+anna gonzales,bell
+anna gonzales,erik pettyjohn
+anna gonzales,air force jrotc
+anna gonzales,erik pettyjohn    
+anna gonzales,air force
+anna gonzales,united states air force pettyjohn
+anna gonzales,air force
+anna gonzales,squadron
+anna gonzales,champaignurbana
+anna gonzales,aurora university
+anna gonzales,joe dryden
+anna gonzales,aurora historical
+richard,united states army
+richard,bell
+richard,erik pettyjohn
+richard,air force jrotc
+richard,erik pettyjohn    
+richard,air force
+richard,united states air force pettyjohn
+richard,air force
+richard,squadron
+richard,champaignurbana
+richard,aurora university
+richard,joe dryden
+richard,aurora historical
+united states army,bell
+united states army,erik pettyjohn
+united states army,air force jrotc
+united states army,erik pettyjohn    
+united states army,air force
+united states army,united states air force pettyjohn
+united states army,air force
+united states army,squadron
+united states army,champaignurbana
+united states army,aurora university
+united states army,joe dryden
+united states army,aurora historical
+bell,erik pettyjohn
+bell,air force jrotc
+bell,erik pettyjohn    
+bell,air force
+bell,united states air force pettyjohn
+bell,air force
+bell,squadron
+bell,champaignurbana
+bell,aurora university
+bell,joe dryden
+bell,aurora historical
+erik pettyjohn,air force jrotc
+erik pettyjohn,erik pettyjohn    
+erik pettyjohn,air force
+erik pettyjohn,united states air force pettyjohn
+erik pettyjohn,air force
+erik pettyjohn,squadron
+erik pettyjohn,champaignurbana
+erik pettyjohn,aurora university
+erik pettyjohn,joe dryden
+erik pettyjohn,aurora historical
+air force jrotc,erik pettyjohn    
+air force jrotc,air force
+air force jrotc,united states air force pettyjohn
+air force jrotc,air force
+air force jrotc,squadron
+air force jrotc,champaignurbana
+air force jrotc,aurora university
+air force jrotc,joe dryden
+air force jrotc,aurora historical
+erik pettyjohn    ,air force
+erik pettyjohn    ,united states air force pettyjohn
+erik pettyjohn    ,air force
+erik pettyjohn    ,squadron
+erik pettyjohn    ,champaignurbana
+erik pettyjohn    ,aurora university
+erik pettyjohn    ,joe dryden
+erik pettyjohn    ,aurora historical
+air force,united states air force pettyjohn
+air force,air force
+air force,squadron
+air force,champaignurbana
+air force,aurora university
+air force,joe dryden
+air force,aurora historical
+united states air force pettyjohn,air force
+united states air force pettyjohn,squadron
+united states air force pettyjohn,champaignurbana
+united states air force pettyjohn,aurora university
+united states air force pettyjohn,joe dryden
+united states air force pettyjohn,aurora historical
+air force,squadron
+air force,champaignurbana
+air force,aurora university
+air force,joe dryden
+air force,aurora historical
+squadron,champaignurbana
+squadron,aurora university
+squadron,joe dryden
+squadron,aurora historical
+champaignurbana,aurora university
+champaignurbana,joe dryden
+champaignurbana,aurora historical
+aurora university,joe dryden
+aurora university,aurora historical
+joe dryden,aurora historical
+york times   ,congress
+york times   ,congress
+congress,congress
+policyed       america,morris
+policyed       america,fiorina
+morris,fiorina
+elliott davis fox      ,st louis board
+elliott davis fox      ,aldermanic committee
+st louis board,aldermanic committee
+halfcup jar,spicespenzeyscouponhtml      
+halfcup jar,senate
+halfcup jar,supreme court
+halfcup jar,republican party
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+spicespenzeyscouponhtml      ,senate
+spicespenzeyscouponhtml      ,supreme court
+spicespenzeyscouponhtml      ,republican party
+spicespenzeyscouponhtml      ,halfcup jar
+spicespenzeyscouponhtml      ,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+nrdc natural resources defense council,epa    army corps
+nrdc natural resources defense council,senate
+nrdc natural resources defense council,supreme court
+nrdc natural resources defense council,republican party
+nrdc natural resources defense council,halfcup jar
+nrdc natural resources defense council,halfcup jar
+epa    army corps,senate
+epa    army corps,supreme court
+epa    army corps,republican party
+epa    army corps,halfcup jar
+epa    army corps,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+aclu,tommie smith
+aclu,john carlos
+aclu,solidarity
+aclu,colin kaepernick
+aclu,eric reid
+tommie smith,john carlos
+tommie smith,solidarity
+tommie smith,colin kaepernick
+tommie smith,eric reid
+john carlos,solidarity
+john carlos,colin kaepernick
+john carlos,eric reid
+solidarity,colin kaepernick
+solidarity,eric reid
+colin kaepernick,eric reid
+republican party,supreme court
+republican party,garlic    parsley flakes    blue
+republican party,chili powder
+republican party,bill penzey
+supreme court,garlic    parsley flakes    blue
+supreme court,chili powder
+supreme court,bill penzey
+garlic    parsley flakes    blue,chili powder
+garlic    parsley flakes    blue,bill penzey
+chili powder,bill penzey
+usa,unhcr
+usa,malik unhcr
+unhcr,malik unhcr
+senate supreme court,miles
+senate supreme court,kayak
+senate supreme court,hike hunt
+senate supreme court,john gappa
+senate supreme court,suzanne   
+miles,kayak
+miles,hike hunt
+miles,john gappa
+miles,suzanne   
+kayak,hike hunt
+kayak,john gappa
+kayak,suzanne   
+hike hunt,john gappa
+hike hunt,suzanne   
+john gappa,suzanne   
+sierra club   ,sierra club
+sierra club   ,ahrya fine arts theatre
+sierra club   ,amber valletta
+sierra club,ahrya fine arts theatre
+sierra club,amber valletta
+ahrya fine arts theatre,amber valletta
+catholic relief services,boko haram
+catholic relief services,bintu
+catholic relief services,crs
+boko haram,bintu
+boko haram,crs
+bintu,crs
+mg anne shellumof,arup cameron hall
+mg anne shellumof,katerra jim graham
+mg anne shellumof,graham baba
+mg anne shellumof,chen
+mg anne shellumof,shks kim sherman
+mg anne shellumof,karl rosman
+mg anne shellumof,tom douglas
+mg anne shellumof,chris eden
+arup cameron hall,katerra jim graham
+arup cameron hall,graham baba
+arup cameron hall,chen
+arup cameron hall,shks kim sherman
+arup cameron hall,karl rosman
+arup cameron hall,tom douglas
+arup cameron hall,chris eden
+katerra jim graham,graham baba
+katerra jim graham,chen
+katerra jim graham,shks kim sherman
+katerra jim graham,karl rosman
+katerra jim graham,tom douglas
+katerra jim graham,chris eden
+graham baba,chen
+graham baba,shks kim sherman
+graham baba,karl rosman
+graham baba,tom douglas
+graham baba,chris eden
+chen,shks kim sherman
+chen,karl rosman
+chen,tom douglas
+chen,chris eden
+shks kim sherman,karl rosman
+shks kim sherman,tom douglas
+shks kim sherman,chris eden
+karl rosman,tom douglas
+karl rosman,chris eden
+tom douglas,chris eden
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+nrdc natural resources defense council,epa    army corps
+nrdc natural resources defense council,miles
+nrdc natural resources defense council,kayak
+nrdc natural resources defense council,hike hunt
+epa    army corps,miles
+epa    army corps,kayak
+epa    army corps,hike hunt
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+wilderness society,congress
+wilderness society,miles
+wilderness society,kayak
+wilderness society,hike hunt
+congress,miles
+congress,kayak
+congress,hike hunt
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+hillary nasty,jesus
+hillary nasty,miles
+hillary nasty,kayak
+hillary nasty,hike hunt
+hillary nasty,kayak
+hillary nasty,hike hunt
+hillary nasty,miles
+hillary nasty,kayak
+hillary nasty,hike hunt
+hillary nasty,miles
+hillary nasty,kayak
+hillary nasty,hike hunt
+jesus,miles
+jesus,kayak
+jesus,hike hunt
+jesus,kayak
+jesus,hike hunt
+jesus,miles
+jesus,kayak
+jesus,hike hunt
+jesus,miles
+jesus,kayak
+jesus,hike hunt
+miles,kayak
+miles,hike hunt
+miles,kayak
+miles,hike hunt
+miles,miles
+miles,kayak
+miles,hike hunt
+miles,miles
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+kayak,kayak
+kayak,hike hunt
+kayak,miles
+kayak,kayak
+kayak,hike hunt
+kayak,miles
+kayak,kayak
+kayak,hike hunt
+hike hunt,kayak
+hike hunt,hike hunt
+hike hunt,miles
+hike hunt,kayak
+hike hunt,hike hunt
+hike hunt,miles
+hike hunt,kayak
+hike hunt,hike hunt
+kayak,hike hunt
+kayak,miles
+kayak,kayak
+kayak,hike hunt
+kayak,miles
+kayak,kayak
+kayak,hike hunt
+hike hunt,miles
+hike hunt,kayak
+hike hunt,hike hunt
+hike hunt,miles
+hike hunt,kayak
+hike hunt,hike hunt
+miles,kayak
+miles,hike hunt
+miles,miles
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+kayak,miles
+kayak,kayak
+kayak,hike hunt
+hike hunt,miles
+hike hunt,kayak
+hike hunt,hike hunt
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+mark desaulnier,congress
+mark desaulnier,donald
+mark desaulnier,gop
+mark desaulnier,congress
+mark desaulnier,mark desaulnier
+congress,donald
+congress,gop
+congress,congress
+congress,mark desaulnier
+donald,gop
+donald,congress
+donald,mark desaulnier
+gop,congress
+gop,mark desaulnier
+congress,mark desaulnier
+senate supreme court,miles
+senate supreme court,kayak
+senate supreme court,hike hunt
+senate supreme court,john gappa
+senate supreme court,suzanne   
+miles,kayak
+miles,hike hunt
+miles,john gappa
+miles,suzanne   
+kayak,hike hunt
+kayak,john gappa
+kayak,suzanne   
+hike hunt,john gappa
+hike hunt,suzanne   
+john gappa,suzanne   
+stephen cloobeck,msnbc
+stephen cloobeck,chuck schumer
+stephen cloobeck,nancy
+stephen cloobeck,amy vilela
+stephen cloobeck,ro khanna
+stephen cloobeck,randy bryce
+stephen cloobeck,paul ryan
+stephen cloobeck,miles
+stephen cloobeck,kayak
+stephen cloobeck,hike hunt
+msnbc,chuck schumer
+msnbc,nancy
+msnbc,amy vilela
+msnbc,ro khanna
+msnbc,randy bryce
+msnbc,paul ryan
+msnbc,miles
+msnbc,kayak
+msnbc,hike hunt
+chuck schumer,nancy
+chuck schumer,amy vilela
+chuck schumer,ro khanna
+chuck schumer,randy bryce
+chuck schumer,paul ryan
+chuck schumer,miles
+chuck schumer,kayak
+chuck schumer,hike hunt
+nancy,amy vilela
+nancy,ro khanna
+nancy,randy bryce
+nancy,paul ryan
+nancy,miles
+nancy,kayak
+nancy,hike hunt
+amy vilela,ro khanna
+amy vilela,randy bryce
+amy vilela,paul ryan
+amy vilela,miles
+amy vilela,kayak
+amy vilela,hike hunt
+ro khanna,randy bryce
+ro khanna,paul ryan
+ro khanna,miles
+ro khanna,kayak
+ro khanna,hike hunt
+randy bryce,paul ryan
+randy bryce,miles
+randy bryce,kayak
+randy bryce,hike hunt
+paul ryan,miles
+paul ryan,kayak
+paul ryan,hike hunt
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+international dyslexia association,national      dyslexiaawarenessmonth      week
+international dyslexia association,dyslexiaawarenessweek    
+national      dyslexiaawarenessmonth      week,dyslexiaawarenessweek    
+🇸,miles
+🇸,kayak
+🇸,hike hunt
+miles,kayak
+miles,hike hunt
+kayak,hike hunt
+crohn  colitis foundation      ,ibd research
+crohn  colitis foundation      ,ibd
+crohn  colitis foundation      ,ibd research drive
+ibd research,ibd
+ibd research,ibd research drive
+ibd,ibd research drive
+mercy corps,marwa
+mercy corps,marwa
+marwa,marwa
+halfcup jar,spicespenzeyscouponhtml      
+halfcup jar,senate
+halfcup jar,supreme court
+halfcup jar,republican party
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+spicespenzeyscouponhtml      ,senate
+spicespenzeyscouponhtml      ,supreme court
+spicespenzeyscouponhtml      ,republican party
+spicespenzeyscouponhtml      ,halfcup jar
+spicespenzeyscouponhtml      ,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+richard pennington,nola
+richard pennington,nopd    
+richard pennington,uno
+richard pennington,orleans   isaiah institute
+richard pennington,marc
+richard pennington,kenneth polite
+richard pennington,archbishop
+richard pennington,john casbon
+richard pennington,jc dyson
+richard pennington,joseph jaeger mark spansel
+richard pennington,joseph givens bryan lagarde
+richard pennington,lawrence lagarde uno
+richard pennington,john nicklow uno dean
+richard pennington,brett kemker
+richard pennington,chris
+richard pennington,uno
+richard pennington,uno
+nola,nopd    
+nola,uno
+nola,orleans   isaiah institute
+nola,marc
+nola,kenneth polite
+nola,archbishop
+nola,john casbon
+nola,jc dyson
+nola,joseph jaeger mark spansel
+nola,joseph givens bryan lagarde
+nola,lawrence lagarde uno
+nola,john nicklow uno dean
+nola,brett kemker
+nola,chris
+nola,uno
+nola,uno
+nopd    ,uno
+nopd    ,orleans   isaiah institute
+nopd    ,marc
+nopd    ,kenneth polite
+nopd    ,archbishop
+nopd    ,john casbon
+nopd    ,jc dyson
+nopd    ,joseph jaeger mark spansel
+nopd    ,joseph givens bryan lagarde
+nopd    ,lawrence lagarde uno
+nopd    ,john nicklow uno dean
+nopd    ,brett kemker
+nopd    ,chris
+nopd    ,uno
+nopd    ,uno
+uno,orleans   isaiah institute
+uno,marc
+uno,kenneth polite
+uno,archbishop
+uno,john casbon
+uno,jc dyson
+uno,joseph jaeger mark spansel
+uno,joseph givens bryan lagarde
+uno,lawrence lagarde uno
+uno,john nicklow uno dean
+uno,brett kemker
+uno,chris
+uno,uno
+uno,uno
+orleans   isaiah institute,marc
+orleans   isaiah institute,kenneth polite
+orleans   isaiah institute,archbishop
+orleans   isaiah institute,john casbon
+orleans   isaiah institute,jc dyson
+orleans   isaiah institute,joseph jaeger mark spansel
+orleans   isaiah institute,joseph givens bryan lagarde
+orleans   isaiah institute,lawrence lagarde uno
+orleans   isaiah institute,john nicklow uno dean
+orleans   isaiah institute,brett kemker
+orleans   isaiah institute,chris
+orleans   isaiah institute,uno
+orleans   isaiah institute,uno
+marc,kenneth polite
+marc,archbishop
+marc,john casbon
+marc,jc dyson
+marc,joseph jaeger mark spansel
+marc,joseph givens bryan lagarde
+marc,lawrence lagarde uno
+marc,john nicklow uno dean
+marc,brett kemker
+marc,chris
+marc,uno
+marc,uno
+kenneth polite,archbishop
+kenneth polite,john casbon
+kenneth polite,jc dyson
+kenneth polite,joseph jaeger mark spansel
+kenneth polite,joseph givens bryan lagarde
+kenneth polite,lawrence lagarde uno
+kenneth polite,john nicklow uno dean
+kenneth polite,brett kemker
+kenneth polite,chris
+kenneth polite,uno
+kenneth polite,uno
+archbishop,john casbon
+archbishop,jc dyson
+archbishop,joseph jaeger mark spansel
+archbishop,joseph givens bryan lagarde
+archbishop,lawrence lagarde uno
+archbishop,john nicklow uno dean
+archbishop,brett kemker
+archbishop,chris
+archbishop,uno
+archbishop,uno
+john casbon,jc dyson
+john casbon,joseph jaeger mark spansel
+john casbon,joseph givens bryan lagarde
+john casbon,lawrence lagarde uno
+john casbon,john nicklow uno dean
+john casbon,brett kemker
+john casbon,chris
+john casbon,uno
+john casbon,uno
+jc dyson,joseph jaeger mark spansel
+jc dyson,joseph givens bryan lagarde
+jc dyson,lawrence lagarde uno
+jc dyson,john nicklow uno dean
+jc dyson,brett kemker
+jc dyson,chris
+jc dyson,uno
+jc dyson,uno
+joseph jaeger mark spansel,joseph givens bryan lagarde
+joseph jaeger mark spansel,lawrence lagarde uno
+joseph jaeger mark spansel,john nicklow uno dean
+joseph jaeger mark spansel,brett kemker
+joseph jaeger mark spansel,chris
+joseph jaeger mark spansel,uno
+joseph jaeger mark spansel,uno
+joseph givens bryan lagarde,lawrence lagarde uno
+joseph givens bryan lagarde,john nicklow uno dean
+joseph givens bryan lagarde,brett kemker
+joseph givens bryan lagarde,chris
+joseph givens bryan lagarde,uno
+joseph givens bryan lagarde,uno
+lawrence lagarde uno,john nicklow uno dean
+lawrence lagarde uno,brett kemker
+lawrence lagarde uno,chris
+lawrence lagarde uno,uno
+lawrence lagarde uno,uno
+john nicklow uno dean,brett kemker
+john nicklow uno dean,chris
+john nicklow uno dean,uno
+john nicklow uno dean,uno
+brett kemker,chris
+brett kemker,uno
+brett kemker,uno
+chris,uno
+chris,uno
+uno,uno
+waco    organization,waco foundation
+waco    organization,patricia scott
+waco foundation,patricia scott
+axle    reason,amp tender
+axle    reason,tx
+axle    reason,phoenix az
+axle    reason,joseph givens bryan lagarde
+axle    reason,lawrence lagarde uno
+axle    reason,john nicklow uno dean
+axle    reason,brett kemker
+axle    reason,chris
+axle    reason,uno
+axle    reason,uno
+amp tender,tx
+amp tender,phoenix az
+amp tender,joseph givens bryan lagarde
+amp tender,lawrence lagarde uno
+amp tender,john nicklow uno dean
+amp tender,brett kemker
+amp tender,chris
+amp tender,uno
+amp tender,uno
+tx,phoenix az
+tx,joseph givens bryan lagarde
+tx,lawrence lagarde uno
+tx,john nicklow uno dean
+tx,brett kemker
+tx,chris
+tx,uno
+tx,uno
+phoenix az,joseph givens bryan lagarde
+phoenix az,lawrence lagarde uno
+phoenix az,john nicklow uno dean
+phoenix az,brett kemker
+phoenix az,chris
+phoenix az,uno
+phoenix az,uno
+joseph givens bryan lagarde,lawrence lagarde uno
+joseph givens bryan lagarde,john nicklow uno dean
+joseph givens bryan lagarde,brett kemker
+joseph givens bryan lagarde,chris
+joseph givens bryan lagarde,uno
+joseph givens bryan lagarde,uno
+lawrence lagarde uno,john nicklow uno dean
+lawrence lagarde uno,brett kemker
+lawrence lagarde uno,chris
+lawrence lagarde uno,uno
+lawrence lagarde uno,uno
+john nicklow uno dean,brett kemker
+john nicklow uno dean,chris
+john nicklow uno dean,uno
+john nicklow uno dean,uno
+brett kemker,chris
+brett kemker,uno
+brett kemker,uno
+chris,uno
+chris,uno
+uno,uno
+halfcup jar,america republican party
+halfcup jar,bruce
+halfcup jar,jeri
+halfcup jar,white house
+halfcup jar,halfcup cinnamon
+halfcup jar,quebec beef
+halfcup jar,garlic   
+halfcup jar,garlic   bbqs   quebec
+halfcup jar,garlic
+halfcup jar,republican party
+halfcup jar,republican party
+halfcup jar,fox
+halfcup jar,propaganda    nature
+america republican party,bruce
+america republican party,jeri
+america republican party,white house
+america republican party,halfcup cinnamon
+america republican party,quebec beef
+america republican party,garlic   
+america republican party,garlic   bbqs   quebec
+america republican party,garlic
+america republican party,republican party
+america republican party,republican party
+america republican party,fox
+america republican party,propaganda    nature
+bruce,jeri
+bruce,white house
+bruce,halfcup cinnamon
+bruce,quebec beef
+bruce,garlic   
+bruce,garlic   bbqs   quebec
+bruce,garlic
+bruce,republican party
+bruce,republican party
+bruce,fox
+bruce,propaganda    nature
+jeri,white house
+jeri,halfcup cinnamon
+jeri,quebec beef
+jeri,garlic   
+jeri,garlic   bbqs   quebec
+jeri,garlic
+jeri,republican party
+jeri,republican party
+jeri,fox
+jeri,propaganda    nature
+white house,halfcup cinnamon
+white house,quebec beef
+white house,garlic   
+white house,garlic   bbqs   quebec
+white house,garlic
+white house,republican party
+white house,republican party
+white house,fox
+white house,propaganda    nature
+halfcup cinnamon,quebec beef
+halfcup cinnamon,garlic   
+halfcup cinnamon,garlic   bbqs   quebec
+halfcup cinnamon,garlic
+halfcup cinnamon,republican party
+halfcup cinnamon,republican party
+halfcup cinnamon,fox
+halfcup cinnamon,propaganda    nature
+quebec beef,garlic   
+quebec beef,garlic   bbqs   quebec
+quebec beef,garlic
+quebec beef,republican party
+quebec beef,republican party
+quebec beef,fox
+quebec beef,propaganda    nature
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   ,republican party
+garlic   ,republican party
+garlic   ,fox
+garlic   ,propaganda    nature
+garlic   bbqs   quebec,garlic
+garlic   bbqs   quebec,republican party
+garlic   bbqs   quebec,republican party
+garlic   bbqs   quebec,fox
+garlic   bbqs   quebec,propaganda    nature
+garlic,republican party
+garlic,republican party
+garlic,fox
+garlic,propaganda    nature
+republican party,republican party
+republican party,fox
+republican party,propaganda    nature
+republican party,fox
+republican party,propaganda    nature
+fox,propaganda    nature
+googlpgrvua pto,america republican party
+googlpgrvua pto,bruce
+googlpgrvua pto,jeri
+googlpgrvua pto,white house
+googlpgrvua pto,halfcup cinnamon
+googlpgrvua pto,quebec beef
+googlpgrvua pto,garlic   
+googlpgrvua pto,garlic   bbqs   quebec
+googlpgrvua pto,garlic
+america republican party,bruce
+america republican party,jeri
+america republican party,white house
+america republican party,halfcup cinnamon
+america republican party,quebec beef
+america republican party,garlic   
+america republican party,garlic   bbqs   quebec
+america republican party,garlic
+bruce,jeri
+bruce,white house
+bruce,halfcup cinnamon
+bruce,quebec beef
+bruce,garlic   
+bruce,garlic   bbqs   quebec
+bruce,garlic
+jeri,white house
+jeri,halfcup cinnamon
+jeri,quebec beef
+jeri,garlic   
+jeri,garlic   bbqs   quebec
+jeri,garlic
+white house,halfcup cinnamon
+white house,quebec beef
+white house,garlic   
+white house,garlic   bbqs   quebec
+white house,garlic
+halfcup cinnamon,quebec beef
+halfcup cinnamon,garlic   
+halfcup cinnamon,garlic   bbqs   quebec
+halfcup cinnamon,garlic
+quebec beef,garlic   
+quebec beef,garlic   bbqs   quebec
+quebec beef,garlic
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   bbqs   quebec,garlic
+sierra club   watch       ,sierra club amp transit pictures
+sierra club   watch       ,ahrya fine arts theatre
+sierra club   watch       ,amber valletta
+sierra club amp transit pictures,ahrya fine arts theatre
+sierra club amp transit pictures,amber valletta
+ahrya fine arts theatre,amber valletta
+yale,epa
+yale,scott pruitt
+yale,matthew kotchen
+yale,longterm
+yale,epa
+epa,scott pruitt
+epa,matthew kotchen
+epa,longterm
+epa,epa
+scott pruitt,matthew kotchen
+scott pruitt,longterm
+scott pruitt,epa
+matthew kotchen,longterm
+matthew kotchen,epa
+longterm,epa
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   ,white house
+garlic   ,halfcup cinnamon
+garlic   ,quebec beef
+garlic   ,garlic   
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   bbqs   quebec,garlic
+garlic   bbqs   quebec,white house
+garlic   bbqs   quebec,halfcup cinnamon
+garlic   bbqs   quebec,quebec beef
+garlic   bbqs   quebec,garlic   
+garlic   bbqs   quebec,garlic   bbqs   quebec
+garlic   bbqs   quebec,garlic
+garlic,white house
+garlic,halfcup cinnamon
+garlic,quebec beef
+garlic,garlic   
+garlic,garlic   bbqs   quebec
+garlic,garlic
+white house,halfcup cinnamon
+white house,quebec beef
+white house,garlic   
+white house,garlic   bbqs   quebec
+white house,garlic
+halfcup cinnamon,quebec beef
+halfcup cinnamon,garlic   
+halfcup cinnamon,garlic   bbqs   quebec
+halfcup cinnamon,garlic
+quebec beef,garlic   
+quebec beef,garlic   bbqs   quebec
+quebec beef,garlic
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   bbqs   quebec,garlic
+republican party,squirrel hill
+republican party,halfcup jar
+republican party,garlic
+republican party,jar
+republican party,jar    
+squirrel hill,halfcup jar
+squirrel hill,garlic
+squirrel hill,jar
+squirrel hill,jar    
+halfcup jar,garlic
+halfcup jar,jar
+halfcup jar,jar    
+garlic,jar
+garlic,jar    
+jar,jar    
+american cancer society cancer action network,katie hill
+american cancer society cancer action network,congress
+american cancer society cancer action network,steve knight
+katie hill,congress
+katie hill,steve knight
+congress,steve knight
+max rose,max rose
+max rose,max rose    
+max rose,⋅
+max rose,congress
+max rose,max
+max rose,congress
+max rose,max rose    
+max rose,triangle
+max rose,triangle
+max rose,max rose      
+max rose,max
+max rose,max
+max rose,max rose    
+max rose,⋅
+max rose,congress
+max rose,max
+max rose,congress
+max rose,max rose    
+max rose,triangle
+max rose,triangle
+max rose,max rose      
+max rose,max
+max rose,max
+max rose    ,⋅
+max rose    ,congress
+max rose    ,max
+max rose    ,congress
+max rose    ,max rose    
+max rose    ,triangle
+max rose    ,triangle
+max rose    ,max rose      
+max rose    ,max
+max rose    ,max
+⋅,congress
+⋅,max
+⋅,congress
+⋅,max rose    
+⋅,triangle
+⋅,triangle
+⋅,max rose      
+⋅,max
+⋅,max
+congress,max
+congress,congress
+congress,max rose    
+congress,triangle
+congress,triangle
+congress,max rose      
+congress,max
+congress,max
+max,congress
+max,max rose    
+max,triangle
+max,triangle
+max,max rose      
+max,max
+max,max
+congress,max rose    
+congress,triangle
+congress,triangle
+congress,max rose      
+congress,max
+congress,max
+max rose    ,triangle
+max rose    ,triangle
+max rose    ,max rose      
+max rose    ,max
+max rose    ,max
+triangle,triangle
+triangle,max rose      
+triangle,max
+triangle,max
+triangle,max rose      
+triangle,max
+triangle,max
+max rose      ,max
+max rose      ,max
+max,max
+johnson,johnson
+johnson,johnson
+johnson,amp johnson
+johnson,johnson
+johnson,amp johnson
+johnson,amp johnson
+nyc,juilliard
+nyc,mariella haubs
+nyc,jocelyn zhu     
+nyc,👨
+nyc,nelson
+nyc,📢
+nyc,hussein somalia
+nyc,congress
+nyc,therehtz idupsw
+nyc,triangle
+nyc,triangle
+nyc,max rose      views
+juilliard,mariella haubs
+juilliard,jocelyn zhu     
+juilliard,👨
+juilliard,nelson
+juilliard,📢
+juilliard,hussein somalia
+juilliard,congress
+juilliard,therehtz idupsw
+juilliard,triangle
+juilliard,triangle
+juilliard,max rose      views
+mariella haubs,jocelyn zhu     
+mariella haubs,👨
+mariella haubs,nelson
+mariella haubs,📢
+mariella haubs,hussein somalia
+mariella haubs,congress
+mariella haubs,therehtz idupsw
+mariella haubs,triangle
+mariella haubs,triangle
+mariella haubs,max rose      views
+jocelyn zhu     ,👨
+jocelyn zhu     ,nelson
+jocelyn zhu     ,📢
+jocelyn zhu     ,hussein somalia
+jocelyn zhu     ,congress
+jocelyn zhu     ,therehtz idupsw
+jocelyn zhu     ,triangle
+jocelyn zhu     ,triangle
+jocelyn zhu     ,max rose      views
+👨,nelson
+👨,📢
+👨,hussein somalia
+👨,congress
+👨,therehtz idupsw
+👨,triangle
+👨,triangle
+👨,max rose      views
+nelson,📢
+nelson,hussein somalia
+nelson,congress
+nelson,therehtz idupsw
+nelson,triangle
+nelson,triangle
+nelson,max rose      views
+📢,hussein somalia
+📢,congress
+📢,therehtz idupsw
+📢,triangle
+📢,triangle
+📢,max rose      views
+hussein somalia,congress
+hussein somalia,therehtz idupsw
+hussein somalia,triangle
+hussein somalia,triangle
+hussein somalia,max rose      views
+congress,therehtz idupsw
+congress,triangle
+congress,triangle
+congress,max rose      views
+therehtz idupsw,triangle
+therehtz idupsw,triangle
+therehtz idupsw,max rose      views
+triangle,triangle
+triangle,max rose      views
+triangle,max rose      views
+halfcup jar,spicespenzeyscouponhtml      
+halfcup jar,senate
+halfcup jar,supreme court
+halfcup jar,republican party
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+spicespenzeyscouponhtml      ,senate
+spicespenzeyscouponhtml      ,supreme court
+spicespenzeyscouponhtml      ,republican party
+spicespenzeyscouponhtml      ,halfcup jar
+spicespenzeyscouponhtml      ,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+thomas merton center,thomas merton center board
+thomas merton center,shernell smith
+thomas merton center,daniel sun
+thomas merton center,mark dixon
+thomas merton center board,shernell smith
+thomas merton center board,daniel sun
+thomas merton center board,mark dixon
+shernell smith,daniel sun
+shernell smith,mark dixon
+daniel sun,mark dixon
+halsey,lgbtq      
+halsey,❄
+halsey,senate
+halsey,supreme court
+halsey,republican party
+halsey,halfcup jar
+halsey,halfcup jar
+lgbtq      ,❄
+lgbtq      ,senate
+lgbtq      ,supreme court
+lgbtq      ,republican party
+lgbtq      ,halfcup jar
+lgbtq      ,halfcup jar
+❄,senate
+❄,supreme court
+❄,republican party
+❄,halfcup jar
+❄,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+foie gras,foie gras farm      company
+foie gras,foie gras
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras farm      company,foie gras
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+foie gras farm      company,foie gras
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras farm      company,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+foie gras,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+republican party,squirrel hill
+republican party,halfcup jar
+republican party,garlic
+republican party,jar
+republican party,jar    
+squirrel hill,halfcup jar
+squirrel hill,garlic
+squirrel hill,jar
+squirrel hill,jar    
+halfcup jar,garlic
+halfcup jar,jar
+halfcup jar,jar    
+garlic,jar
+garlic,jar    
+jar,jar    
+national park foundation,national park foundation
+national park foundation,national park foundation
+national park foundation,national park foundation
+steven crowder,steven
+steven crowder,owen benjamin
+steven crowder,erik
+steven,owen benjamin
+steven,erik
+owen benjamin,erik
+khan academy,anjali
+khan academy,khan academy       
+khan academy,anjali
+anjali,khan academy       
+anjali,anjali
+khan academy       ,anjali
+aspca,aspca    ground
+aspca,michael
+aspca    ground,michael
+uso,marine corps sacrifice
+uso,marine corps
+marine corps sacrifice,marine corps
+liliana segura,jordan smith
+liliana segura,murderville ga    
+jordan smith,murderville ga    
+york times,york times
+york times,journey   
+york times,journey   
+matt fraser,matt fraser
+matt fraser,fox news cbs radio
+matt fraser,matt fraser
+matt fraser,matt fraser
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,adult matt       
+matt fraser,matt
+matt fraser,nbc morning
+matt fraser,cbs radio fox news coast
+matt fraser,matt
+matt fraser,matt
+matt fraser,england matt
+matt fraser,fox news cbs radio
+matt fraser,matt fraser
+matt fraser,matt fraser
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,adult matt       
+matt fraser,matt
+matt fraser,nbc morning
+matt fraser,cbs radio fox news coast
+matt fraser,matt
+matt fraser,matt
+matt fraser,england matt
+fox news cbs radio,matt fraser
+fox news cbs radio,matt fraser
+fox news cbs radio,matt
+fox news cbs radio,matt
+fox news cbs radio,matt
+fox news cbs radio,matt
+fox news cbs radio,matt
+fox news cbs radio,adult matt       
+fox news cbs radio,matt
+fox news cbs radio,nbc morning
+fox news cbs radio,cbs radio fox news coast
+fox news cbs radio,matt
+fox news cbs radio,matt
+fox news cbs radio,england matt
+matt fraser,matt fraser
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,adult matt       
+matt fraser,matt
+matt fraser,nbc morning
+matt fraser,cbs radio fox news coast
+matt fraser,matt
+matt fraser,matt
+matt fraser,england matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,matt
+matt fraser,adult matt       
+matt fraser,matt
+matt fraser,nbc morning
+matt fraser,cbs radio fox news coast
+matt fraser,matt
+matt fraser,matt
+matt fraser,england matt
+matt,matt
+matt,matt
+matt,matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,matt
+matt,matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+adult matt       ,matt
+adult matt       ,nbc morning
+adult matt       ,cbs radio fox news coast
+adult matt       ,matt
+adult matt       ,matt
+adult matt       ,england matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+nbc morning,cbs radio fox news coast
+nbc morning,matt
+nbc morning,matt
+nbc morning,england matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,england matt
+matt,matt
+matt,england matt
+matt,england matt
+steven crowder,steven
+steven crowder,owen benjamin
+steven crowder,erik
+steven,owen benjamin
+steven,erik
+owen benjamin,erik
+matt,matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+matt,adult matt       
+matt,matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+adult matt       ,matt
+adult matt       ,nbc morning
+adult matt       ,cbs radio fox news coast
+adult matt       ,matt
+adult matt       ,matt
+adult matt       ,england matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+nbc morning,cbs radio fox news coast
+nbc morning,matt
+nbc morning,matt
+nbc morning,england matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,england matt
+matt,matt
+matt,england matt
+matt,england matt
+aspca,aspca    ground
+aspca,michael
+aspca    ground,michael
+amy klobuchar,amy
+amy klobuchar,amy
+amy,amy
+aids united    study,medicare
+aids united    study,matt
+aids united    study,nbc morning
+aids united    study,cbs radio fox news coast
+aids united    study,matt
+aids united    study,matt
+aids united    study,england matt
+medicare,matt
+medicare,nbc morning
+medicare,cbs radio fox news coast
+medicare,matt
+medicare,matt
+medicare,england matt
+matt,nbc morning
+matt,cbs radio fox news coast
+matt,matt
+matt,matt
+matt,england matt
+nbc morning,cbs radio fox news coast
+nbc morning,matt
+nbc morning,matt
+nbc morning,england matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,matt
+cbs radio fox news coast,england matt
+matt,matt
+matt,england matt
+matt,england matt
+medicaid,medicaid
+medicaid,senate
+medicaid,senate
+sierra club       days,sierra club   free sticker
+sierra club       days,sierra club make america
+sierra club   free sticker,sierra club make america
+hillary,clinton
+hillary,hillary
+hillary,laurie metcalf
+hillary,tony award
+hillary,clinton
+clinton,hillary
+clinton,laurie metcalf
+clinton,tony award
+clinton,clinton
+hillary,laurie metcalf
+hillary,tony award
+hillary,clinton
+laurie metcalf,tony award
+laurie metcalf,clinton
+tony award,clinton
+john  delaney,john delaney
+john  delaney,washington post
+john delaney,washington post
+john  delaney,john delaney
+john  delaney,washington post
+john delaney,washington post
+fox news   ,fox
+fox news   ,fox
+fox news   ,fox news
+fox news   ,robert mueller
+fox news   ,robert mueller
+fox news   ,fox
+fox news   ,fox news
+fox news   ,fox news
+fox news   ,fox news
+fox news   ,fox    republican party
+fox news   ,fox
+fox news   ,kremlin
+fox news   ,fox news
+fox news   ,fox
+fox news   ,fox
+fox news   ,wwwpenzeysonlinecattsardustmemoriespd      
+fox news   ,fox point
+fox news   ,fox
+fox news   ,fox
+fox news   ,fox point
+fox news   ,cook
+fox news   ,fox news
+fox,fox
+fox,fox news
+fox,robert mueller
+fox,robert mueller
+fox,fox
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+fox,fox news
+fox,robert mueller
+fox,robert mueller
+fox,fox
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+fox news,robert mueller
+fox news,robert mueller
+fox news,fox
+fox news,fox news
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd      
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,fox point
+fox news,cook
+fox news,fox news
+robert mueller,robert mueller
+robert mueller,fox
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox    republican party
+robert mueller,fox
+robert mueller,kremlin
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox
+robert mueller,wwwpenzeysonlinecattsardustmemoriespd      
+robert mueller,fox point
+robert mueller,fox
+robert mueller,fox
+robert mueller,fox point
+robert mueller,cook
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox news
+robert mueller,fox    republican party
+robert mueller,fox
+robert mueller,kremlin
+robert mueller,fox news
+robert mueller,fox
+robert mueller,fox
+robert mueller,wwwpenzeysonlinecattsardustmemoriespd      
+robert mueller,fox point
+robert mueller,fox
+robert mueller,fox
+robert mueller,fox point
+robert mueller,cook
+robert mueller,fox news
+fox,fox news
+fox,fox news
+fox,fox news
+fox,fox    republican party
+fox,fox
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd      
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,fox point
+fox news,cook
+fox news,fox news
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd      
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,fox point
+fox news,cook
+fox news,fox news
+fox news,fox    republican party
+fox news,fox
+fox news,kremlin
+fox news,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd      
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,fox point
+fox news,cook
+fox news,fox news
+fox    republican party,fox
+fox    republican party,kremlin
+fox    republican party,fox news
+fox    republican party,fox
+fox    republican party,fox
+fox    republican party,wwwpenzeysonlinecattsardustmemoriespd      
+fox    republican party,fox point
+fox    republican party,fox
+fox    republican party,fox
+fox    republican party,fox point
+fox    republican party,cook
+fox    republican party,fox news
+fox,kremlin
+fox,fox news
+fox,fox
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+kremlin,fox news
+kremlin,fox
+kremlin,fox
+kremlin,wwwpenzeysonlinecattsardustmemoriespd      
+kremlin,fox point
+kremlin,fox
+kremlin,fox
+kremlin,fox point
+kremlin,cook
+kremlin,fox news
+fox news,fox
+fox news,fox
+fox news,wwwpenzeysonlinecattsardustmemoriespd      
+fox news,fox point
+fox news,fox
+fox news,fox
+fox news,fox point
+fox news,cook
+fox news,fox news
+fox,fox
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+fox,wwwpenzeysonlinecattsardustmemoriespd      
+fox,fox point
+fox,fox
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+wwwpenzeysonlinecattsardustmemoriespd      ,fox point
+wwwpenzeysonlinecattsardustmemoriespd      ,fox
+wwwpenzeysonlinecattsardustmemoriespd      ,fox
+wwwpenzeysonlinecattsardustmemoriespd      ,fox point
+wwwpenzeysonlinecattsardustmemoriespd      ,cook
+wwwpenzeysonlinecattsardustmemoriespd      ,fox news
+fox point,fox
+fox point,fox
+fox point,fox point
+fox point,cook
+fox point,fox news
+fox,fox
+fox,fox point
+fox,cook
+fox,fox news
+fox,fox point
+fox,cook
+fox,fox news
+fox point,cook
+fox point,fox news
+cook,fox news
+republican party,halfcup jar
+republican party,cinnamon sugar
+halfcup jar,cinnamon sugar
+uso   midnight,army
+uso   midnight,navy
+army,navy
+truman disposables,truman
+truman disposables,camaraderie
+truman,camaraderie
+standwithus     standwithus   ,standwithus    
+standwithus     standwithus   ,standwithus   
+standwithus    ,standwithus   
+brad meltzer,josh
+brad meltzer,amp union
+josh,amp union
+mercy corps,🚨
+mercy corps,zimbabwe    world blue express
+🚨,zimbabwe    world blue express
+pnc,google
+pnc,google
+google,google
+khan academy,anjali
+khan academy,khan academy
+khan academy,anjali
+anjali,khan academy
+anjali,anjali
+khan academy,anjali
+prostate cancer foundation,pcf    blue
+prostate cancer foundation,pcf pushup
+pcf    blue,pcf pushup
+ruth,ginsburg
+ruth,supreme court
+ruth,bronx freedom fund
+ginsburg,supreme court
+ginsburg,bronx freedom fund
+supreme court,bronx freedom fund
+naral prochoice america,roe
+naral prochoice america,wade
+roe,wade
+pfizer,pfizer
+pfizer,healthcare
+pfizer,healthcare
+mike pence,roe
+mike pence,wade
+roe,wade
+american gun association,🇸
+american gun association,❄
+american gun association,senate
+american gun association,supreme court
+american gun association,republican party
+american gun association,halfcup jar
+american gun association,halfcup jar
+🇸,❄
+🇸,senate
+🇸,supreme court
+🇸,republican party
+🇸,halfcup jar
+🇸,halfcup jar
+❄,senate
+❄,supreme court
+❄,republican party
+❄,halfcup jar
+❄,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+🇸,🇸
+🇸,senate
+🇸,supreme court
+🇸,republican party
+🇸,halfcup jar
+🇸,halfcup jar
+🇸,halfcup jar
+🇸,halfcup jar
+🇸,senate
+🇸,supreme court
+🇸,republican party
+🇸,halfcup jar
+🇸,halfcup jar
+🇸,halfcup jar
+🇸,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+joe   ,joe    
+joe   ,cup
+joe   ,joe   jane
+joe    ,cup
+joe    ,joe   jane
+cup,joe   jane
+👏,halfcup jar
+👏,halfcup jar
+👏,halfcup jar
+👏,halfcup jar
+👏,halfcup jar
+👏,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+⋅,triangle
+⋅,triangle
+triangle,triangle
+roe,wade
+roe,roe
+wade,roe
+ruth,ginsburg
+ruth,supreme court
+ruth,bronx freedom fund
+ginsburg,supreme court
+ginsburg,bronx freedom fund
+supreme court,bronx freedom fund
+mercy corps,congress
+mercy corps,congress
+congress,congress
+usa,unhcr
+usa,unhcr
+unhcr,unhcr
+national trust,national trust
+national trust,triangle
+national trust,triangle
+national trust,triangle
+national trust,triangle
+triangle,triangle
+usa,unhcr
+usa,unhcr
+unhcr,unhcr
+usa,unhcr
+usa,jesse tyler ferguson
+unhcr,jesse tyler ferguson
+republican party,milwaukee school board
+republican party,bob peterson
+republican party,motto bob      
+republican party,felt              
+milwaukee school board,bob peterson
+milwaukee school board,motto bob      
+milwaukee school board,felt              
+bob peterson,motto bob      
+bob peterson,felt              
+motto bob      ,felt              
+usa,unhcr
+usa,unhcr
+unhcr,unhcr
+usa,unhcr
+usa,unhcr
+unhcr,unhcr
+usa,unhcr
+usa,unhcr
+unhcr,unhcr
+halfcup jar,republican party
+halfcup jar,jesus
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,garlic
+halfcup jar,wisconsin    
+republican party,jesus
+republican party,halfcup jar
+republican party,halfcup jar
+republican party,garlic
+republican party,wisconsin    
+jesus,halfcup jar
+jesus,halfcup jar
+jesus,garlic
+jesus,wisconsin    
+halfcup jar,halfcup jar
+halfcup jar,garlic
+halfcup jar,wisconsin    
+halfcup jar,garlic
+halfcup jar,wisconsin    
+garlic,wisconsin    
+pela case,halfcup jar
+pela case,halfcup jar
+pela case,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+nuclear energy institute,monica
+nuclear energy institute,hamilton
+monica,hamilton
+mercy corps,zimbabwe cyclone
+mercy corps,halfcup jar
+mercy corps,halfcup jar
+mercy corps,halfcup jar
+mercy corps,halfcup jar
+zimbabwe cyclone,halfcup jar
+zimbabwe cyclone,halfcup jar
+zimbabwe cyclone,halfcup jar
+zimbabwe cyclone,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+usa,unhcr
+usa,idai
+usa,unhcr
+unhcr,idai
+unhcr,unhcr
+idai,unhcr
+national domestic workers alliance,trump    
+national domestic workers alliance,kisha bari dai
+trump    ,kisha bari dai
+usa,unhcr
+usa,idai
+usa,unhcr
+unhcr,idai
+unhcr,unhcr
+idai,unhcr
+hospitality house,pbs
+hospitality house,joe wilson
+hospitality house,joe wilson
+hospitality house,hospitality house
+hospitality house,wwwmightycausebriefbutspectacularhospitali
+pbs,joe wilson
+pbs,joe wilson
+pbs,hospitality house
+pbs,wwwmightycausebriefbutspectacularhospitali
+joe wilson,joe wilson
+joe wilson,hospitality house
+joe wilson,wwwmightycausebriefbutspectacularhospitali
+joe wilson,hospitality house
+joe wilson,wwwmightycausebriefbutspectacularhospitali
+hospitality house,wwwmightycausebriefbutspectacularhospitali
+paramount,paramount
+paramount,trayvon martin
+paramount,trayvon martin
+paramount,trayvon martin
+paramount,paramount
+trayvon martin,paramount
+aleppomitchell street,republican party
+aleppomitchell street,wwwpenzeysmitchellstreetpd
+aleppomitchell street,mitchell
+aleppomitchell street,bill penzey
+republican party,wwwpenzeysmitchellstreetpd
+republican party,mitchell
+republican party,bill penzey
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,bill penzey
+mitchell,bill penzey
+aleppomitchell street,republican party
+aleppomitchell street,wwwpenzeysmitchellstreetpd
+aleppomitchell street,mitchell
+aleppomitchell street,bill penzey
+republican party,wwwpenzeysmitchellstreetpd
+republican party,mitchell
+republican party,bill penzey
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,bill penzey
+mitchell,bill penzey
+mic,mic dispatch
+mic,yoonj kim
+mic,ross katz
+mic,rupaul
+mic,mic
+mic dispatch,yoonj kim
+mic dispatch,ross katz
+mic dispatch,rupaul
+mic dispatch,mic
+yoonj kim,ross katz
+yoonj kim,rupaul
+yoonj kim,mic
+ross katz,rupaul
+ross katz,mic
+rupaul,mic
+aleppomitchell street,republican party
+aleppomitchell street,wwwpenzeysmitchellstreetpd
+aleppomitchell street,mitchell
+aleppomitchell street,bill penzey
+republican party,wwwpenzeysmitchellstreetpd
+republican party,mitchell
+republican party,bill penzey
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,bill penzey
+mitchell,bill penzey
+kelda helen,republican party
+kelda helen,garlicky mitchell street
+kelda helen,wwwpenzeysmitchellstreetpd
+kelda helen,spicespenzeyscouponhtml
+kelda helen,mitchell
+kelda helen,republican party
+kelda helen,white house
+kelda helen,republican party
+kelda helen,republican party
+kelda helen,kelda
+kelda helen,tammy baldwin   
+kelda helen,baldwin   
+republican party,garlicky mitchell street
+republican party,wwwpenzeysmitchellstreetpd
+republican party,spicespenzeyscouponhtml
+republican party,mitchell
+republican party,republican party
+republican party,white house
+republican party,republican party
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+garlicky mitchell street,wwwpenzeysmitchellstreetpd
+garlicky mitchell street,spicespenzeyscouponhtml
+garlicky mitchell street,mitchell
+garlicky mitchell street,republican party
+garlicky mitchell street,white house
+garlicky mitchell street,republican party
+garlicky mitchell street,republican party
+garlicky mitchell street,kelda
+garlicky mitchell street,tammy baldwin   
+garlicky mitchell street,baldwin   
+wwwpenzeysmitchellstreetpd,spicespenzeyscouponhtml
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,white house
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,republican party
+wwwpenzeysmitchellstreetpd,kelda
+wwwpenzeysmitchellstreetpd,tammy baldwin   
+wwwpenzeysmitchellstreetpd,baldwin   
+spicespenzeyscouponhtml,mitchell
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,white house
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,republican party
+spicespenzeyscouponhtml,kelda
+spicespenzeyscouponhtml,tammy baldwin   
+spicespenzeyscouponhtml,baldwin   
+mitchell,republican party
+mitchell,white house
+mitchell,republican party
+mitchell,republican party
+mitchell,kelda
+mitchell,tammy baldwin   
+mitchell,baldwin   
+republican party,white house
+republican party,republican party
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+white house,republican party
+white house,republican party
+white house,kelda
+white house,tammy baldwin   
+white house,baldwin   
+republican party,republican party
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+republican party,kelda
+republican party,tammy baldwin   
+republican party,baldwin   
+kelda,tammy baldwin   
+kelda,baldwin   
+tammy baldwin   ,baldwin   
+mark kramer,oregon supreme court
+mark kramer,wwwpenzeysmitchellstreetpd
+mark kramer,spicespenzeyscouponhtml
+mark kramer,mitchell
+mark kramer,republican party
+oregon supreme court,wwwpenzeysmitchellstreetpd
+oregon supreme court,spicespenzeyscouponhtml
+oregon supreme court,mitchell
+oregon supreme court,republican party
+wwwpenzeysmitchellstreetpd,spicespenzeyscouponhtml
+wwwpenzeysmitchellstreetpd,mitchell
+wwwpenzeysmitchellstreetpd,republican party
+spicespenzeyscouponhtml,mitchell
+spicespenzeyscouponhtml,republican party
+mitchell,republican party
+chicago council,wearable technology
+chicago council,behnaz farahi
+chicago council,emily landon
+chicago council,haotian wang
+wearable technology,behnaz farahi
+wearable technology,emily landon
+wearable technology,haotian wang
+behnaz farahi,emily landon
+behnaz farahi,haotian wang
+emily landon,haotian wang
+washington post,randall
+washington post,eliason
+washington post,brett
+washington post,senate
+randall,eliason
+randall,brett
+randall,senate
+eliason,brett
+eliason,senate
+brett,senate
+abraham lincoln,thanksgiving   national holiday     
+abraham lincoln,cajun seasoning
+abraham lincoln,republican party
+abraham lincoln,cajun    
+abraham lincoln,people   national museum
+thanksgiving   national holiday     ,cajun seasoning
+thanksgiving   national holiday     ,republican party
+thanksgiving   national holiday     ,cajun    
+thanksgiving   national holiday     ,people   national museum
+cajun seasoning,republican party
+cajun seasoning,cajun    
+cajun seasoning,people   national museum
+republican party,cajun    
+republican party,people   national museum
+cajun    ,people   national museum
+uso,army
+uso,army
+army,army
+jjs  janet janet,janet janet
+jjs  janet janet,llc jjs
+janet janet,llc jjs
+uso   midnight,army
+uso   midnight,navy
+army,navy
+nra,supreme court
+nra,senate
+supreme court,senate
+trump austin   ,linda curtis
+trump austin   ,fred lewis
+trump austin   ,indyaustin
+trump austin   ,austin
+trump austin   ,fred lewis
+linda curtis,fred lewis
+linda curtis,indyaustin
+linda curtis,austin
+linda curtis,fred lewis
+fred lewis,indyaustin
+fred lewis,austin
+fred lewis,fred lewis
+indyaustin,austin
+indyaustin,fred lewis
+austin,fred lewis
+halfcup jar,spicespenzeyscouponhtml      
+halfcup jar,senate
+halfcup jar,supreme court
+halfcup jar,republican party
+halfcup jar,halfcup jar
+halfcup jar,halfcup jar
+spicespenzeyscouponhtml      ,senate
+spicespenzeyscouponhtml      ,supreme court
+spicespenzeyscouponhtml      ,republican party
+spicespenzeyscouponhtml      ,halfcup jar
+spicespenzeyscouponhtml      ,halfcup jar
+senate,supreme court
+senate,republican party
+senate,halfcup jar
+senate,halfcup jar
+supreme court,republican party
+supreme court,halfcup jar
+supreme court,halfcup jar
+republican party,halfcup jar
+republican party,halfcup jar
+halfcup jar,halfcup jar
+brown school,washington university
+brown school,jesse herman
+brown school,army
+washington university,jesse herman
+washington university,army
+jesse herman,army
+ruth,ginsburg
+ruth,supreme court
+ruth,bronx freedom fund
+ginsburg,supreme court
+ginsburg,bronx freedom fund
+supreme court,bronx freedom fund
+hillary clinton,laurene powell
+hillary clinton,laverne cox
+hillary clinton,mcgowan amp
+laurene powell,laverne cox
+laurene powell,mcgowan amp
+laverne cox,mcgowan amp
+ted talk,hasan minhaj
+ted talk,chelsea
+hasan minhaj,chelsea
+halfcup jar,america republican party
+halfcup jar,bruce
+halfcup jar,jeri
+halfcup jar,white house
+halfcup jar,halfcup cinnamon
+halfcup jar,quebec beef
+halfcup jar,garlic   
+halfcup jar,garlic   bbqs   quebec
+halfcup jar,garlic
+halfcup jar,republican party
+halfcup jar,republican party
+halfcup jar,fox
+halfcup jar,propaganda    nature
+america republican party,bruce
+america republican party,jeri
+america republican party,white house
+america republican party,halfcup cinnamon
+america republican party,quebec beef
+america republican party,garlic   
+america republican party,garlic   bbqs   quebec
+america republican party,garlic
+america republican party,republican party
+america republican party,republican party
+america republican party,fox
+america republican party,propaganda    nature
+bruce,jeri
+bruce,white house
+bruce,halfcup cinnamon
+bruce,quebec beef
+bruce,garlic   
+bruce,garlic   bbqs   quebec
+bruce,garlic
+bruce,republican party
+bruce,republican party
+bruce,fox
+bruce,propaganda    nature
+jeri,white house
+jeri,halfcup cinnamon
+jeri,quebec beef
+jeri,garlic   
+jeri,garlic   bbqs   quebec
+jeri,garlic
+jeri,republican party
+jeri,republican party
+jeri,fox
+jeri,propaganda    nature
+white house,halfcup cinnamon
+white house,quebec beef
+white house,garlic   
+white house,garlic   bbqs   quebec
+white house,garlic
+white house,republican party
+white house,republican party
+white house,fox
+white house,propaganda    nature
+halfcup cinnamon,quebec beef
+halfcup cinnamon,garlic   
+halfcup cinnamon,garlic   bbqs   quebec
+halfcup cinnamon,garlic
+halfcup cinnamon,republican party
+halfcup cinnamon,republican party
+halfcup cinnamon,fox
+halfcup cinnamon,propaganda    nature
+quebec beef,garlic   
+quebec beef,garlic   bbqs   quebec
+quebec beef,garlic
+quebec beef,republican party
+quebec beef,republican party
+quebec beef,fox
+quebec beef,propaganda    nature
+garlic   ,garlic   bbqs   quebec
+garlic   ,garlic
+garlic   ,republican party
+garlic   ,republican party
+garlic   ,fox
+garlic   ,propaganda    nature
+garlic   bbqs   quebec,garlic
+garlic   bbqs   quebec,republican party
+garlic   bbqs   quebec,republican party
+garlic   bbqs   quebec,fox
+garlic   bbqs   quebec,propaganda    nature
+garlic,republican party
+garlic,republican party
+garlic,fox
+garlic,propaganda    nature
+republican party,republican party
+republican party,fox
+republican party,propaganda    nature
+republican party,fox
+republican party,propaganda    nature
+fox,propaganda    nature
+nra institute,claire mccaskill   
+nra institute,supreme court
+claire mccaskill   ,supreme court
+ca charter schools association,myrna
+ca charter schools association,amp
+ca charter schools association,myrna   
+ca charter schools association,jed wallace
+myrna,amp
+myrna,myrna   
+myrna,jed wallace
+amp,myrna   
+amp,jed wallace
+myrna   ,jed wallace

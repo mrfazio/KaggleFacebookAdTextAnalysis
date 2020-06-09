@@ -35,7 +35,6 @@ setwd("C:/Users/mrfaz/Documents/GitHub/KaggleFacebookAdTextAnalysis")
 knitr::opts_chunk$set(echo = TRUE)
 options(warn=-1)
 ```
-
 O objetivo do presente projeto é analisar o teor político de diferentes textos utilizados como propagandas no Facebook. 
 
 Utilizamos uma base de dados presente no Kaggle, que pode ser acessada no [link](https://www.kaggle.com/mrmorj/political-advertisements-from-facebook). Essa base foi originalmente gerada pela ONG de jornalistmo investigativo ProPublica, [página](https://projects.propublica.org/facebook-ads/), direcionada a análise desse tipo de propaganda.
@@ -44,7 +43,6 @@ Ela foi criada através da instalação de numa extensão no navegador do usuár
 Os insights gerados por esse tipo de estudo podem ser úteis para que tenhamos a capacidade de compreender o que influência um usuário a classificar uma postagem como sendo de natureza política ou não política. 
 Um sistema de classificação do Instituto gera uma probabilidade de que a postagem seja caracterizada como política. No nosso contexto, vamos ignorar tal informação. Consideraremos apenas os textos, as votações realizadas pelos usuários bem como a data da postagem e de atualização da propaganda).
 
-Comecemos pela importação das bibliotecas
 ```{r}
 library(tidyverse)
 library(DT)
@@ -57,14 +55,13 @@ library(stringi)
 library(RColorBrewer)
 library(textstem)
 library(rmdformats)
-```
-Leitura do arquivo
-```{r}
+
 df_ads <- read_csv('fbpac-ads-en-US.csv')
 print(colnames(df_ads))
 ```
 
 A tabela contém uma grande quantidade de informações e ocupa $3 GB$ de memória. O seu número de linhas é $162.324$:
+
 ```{r}
 nrow(df_ads)
 ```
@@ -140,8 +137,7 @@ df_ads_strat <- df_ads_strat %>% filter(political + not_political > 0)
 df_ads_strat %>% head(10) %>% select(-one_of('message'))
 ```
 
-Após a execução, aplicaremos uma amostragem estratificada utilizando a variável "strat_group" como grupo de estratificação. Para cada grupo separadamente e para cada um deles iremos amostrar aleatoriamente $200$ variáveis. Como temos $20$ grupos ($10$ quantis para político e não político), obteremos, ao final, as $4000$ amostras que desejamos em nosso dataframe reduzido:
-
+AApós a execução, aplicaremos uma amostragem estratificada utilizando a variável "strat_group" como grupo de estratificação. Para cada grupo separadamente e para cada um deles iremos amostrar aleatoriamente $200$ variáveis. Como temos $20$ grupos ($10$ quantis para político e não político), obteremos, ao final, as $4000$ amostras que desejamos em nosso dataframe reduzido:
 ```{r}
 id_list <- c()
 for (current_strat_group in unique(df_ads_strat$strat_group)) {
@@ -166,6 +162,7 @@ removeHTML <- function(x) (return(gsub('<.*?>', ' ', x)))
 removeURL <- function(x) (return(gsub('http[[:alnum:]]*', ' ', x)))
 removeAccents <- function(x) (return(stri_trans_general(str = x, id = 'Latin-ASCII')))
 removeNonAlphanum <- function(x) (return(gsub('[^[:alnum: ]]', ' ', x)))
+removeEmoji <- function(x) (return(gsub("[^\x01-\x7F]", "", x)))
 
 stop_words_list <- c(stopwords(kind = 'SMART'), 'time', 'back', 'today', 'day', 'dont')
 removeSelectedWords <- function(x) (return(removeWords(x, stop_words_list)))
@@ -178,11 +175,13 @@ clean_str <- function(df_in, merge_string = TRUE) {
       removeHTML %>% 
       removeURL %>% 
       removeAccents %>% 
+      removeEmoji %>%
       removeNonAlphanum %>% 
       removeNumbers %>% 
       removeSelectedWords %>% 
-      removePunctuation %>% 
-      str_trim %>% return()
+      removePunctuation %>%
+      str_squish %>% 
+      lemmatize_words %>% return()
   }
   
   df_in_proc <- df_in %>% mutate(text = str_c(title, ' ', message))
@@ -204,14 +203,15 @@ Definindo uma função para gerar um objeto do tipo "TermDocumentMatrix" com a r
 get_tdmat <- function(str_in) {
   str_in %>% 
     VectorSource %>% 
-    Corpus %>% 
-    (function(x) (tm_map(x, lemmatize_words))) %>% 
+    Corpus %>%
     TermDocumentMatrix %>%
     return()
 }
 ```
 
+
 Finalmente, definimos a função que transforma o objeto "TermDocumentMatrix" em uma matriz de frequências, que utilizaremos para gerar um WordCloud:
+
 
 ```{r}
 get_df_words_freq <- function(tdMat) {
@@ -283,7 +283,8 @@ Por meio da função "spacy_extract_entity" iremos classificar as entidades para
 spacy_initialize()
 
 extract_entity <- function(x) (
-  return (spacy_extract_entity(x %>% (function(x)(clean_str(x, FALSE))) %>% unlist)))
+  return (spacy_extract_entity(x %>% (function(x)(clean_str(x, FALSE)))
+                                 %>% unlist)))
 
 political_entities <- extract_entity(df_sample_ads %>% filter(political > not_political))
 not_political_entities <- extract_entity(df_sample_ads %>% filter(political < not_political))
@@ -343,6 +344,7 @@ Aqui tiramos alguns insights que julgamos interessantes:
 
 
 Podemos listar quais desses tipos são interessantes para nossa análise:
+
 
 __PERSON__: 
 > Pode ser útil no contexto de identificar ligações entre pessoas no meio político
@@ -421,11 +423,39 @@ get_adj_list(political_entities) %>% write_csv(path = 'political_adj.csv')
 get_adj_list(not_political_entities) %>% write_csv(path = 'not_political_adj.csv')
 ```
 
+```{r}
+library(gtools)
+library(igraph)
+# função criada pelo professor
+get_adj_list2 <- function(entities, file){
+  entities = lemmatize_words(entities)
+  edges <- entities %>% dplyr::group_by(doc_id) %>% dplyr::summarise(entities = paste(text, collapse = ","))
+  # remove duplicated for the same document
+  edges <- lapply(str_split(edges$entities, ","),
+  function(t){unique(unlist(t))})
+  # Auxiliary functions for creating adjancnt
+  get_adjacent_list <- function(edge_list) {
+    adjacent_matrix <- combinations(length(edge_list),2, edge_list, repeats.allowed=TRUE)
+    return(adjacent_matrix)
+  }
+  adjacent_matrix <- edges %>% lapply(get_adjacent_list) %>% reduce(rbind)
+  
+  df <- as_tibble(adjacent_matrix, colnames=c('source', 'target'))
+  weighted_edgelist <- df %>% dplyr::group_by(V1, V2) %>% dplyr::summarise(weight=n())
+  
+  news_graph <- weighted_edgelist %>% graph_from_data_frame(directed=F)
+  write_graph(news_graph, paste(file, '.graphml', sep = ""), 'graphml')
+}
+```
+
+
 Finalmente, com esses arquivos gerados, podemos exibir nosso primeiro par de grafos. Para ambos, o procedimento adotado foi o de (1) dar aos nós e arestas tamanhos e cores variáveis de acordo com o grau de ligação, (2) aplicar o algoritmo de Force Atlas para separar os nós e (3) aplicar o algorimo de "no overlap" para separá-los, (4) aplicar um filtro para selecionar apenas os nós e arestas relativos aos maiores graus (para permitir uma boa visualização).
 
 Para o caso político:
 
 ![Grafo político](./political_graph.png)
+
+
 
 O grau de conexão do grafo político que pode ser avaliado por meio da sua densidade é muito baixo, em torno de 0.008. Menos de 1% das arestas.
 ![Grafo político](./political_density.png)
@@ -437,15 +467,61 @@ Também podemos detectar a quantidade de comunidades, para isso podemos utilizar
 Neste gráfico, o algoritmo detectou 53 grupos.
 ![Grafo político](./political_modularity.png)
 
-Também podemos utilizar uma outra análise por meio da métrica de centralidade betweeness para analisar quais entidades se conectam aos outros grupos relacionados a outras entidades.
+Também podemos utilizar uma outra análise por meio da métrica de centralidade betweeness para analisar quais entidades se conectam aos outros grupos.
 ![Grafo político](./political_betweeness.png)
 
+Devido a grande quantidade de comunidade, iremos reduzir os tipos de entidades que iremos trabalhar para permitir uma análise mais aprofundada dos grupos. Logo, filtraremos as entidades pessoas e organizações para análise.
 
+```{r}
+entities_to_keep <- c('PERSON', 'ORG')
 
+political_entities_limit <- political_entities %>% 
+  filter(ent_type %in% entities_to_keep)
+
+not_political_entities_limit <- not_political_entities %>% 
+  filter(ent_type %in% entities_to_keep)
+
+get_adj_list2(political_entities_limit,'political_adj_limit')
+get_adj_list2(not_political_entities_limit,'not_political_adj_limit')
+```
+
+O grau de conexão do grafo político que pode ser avaliado por meio da sua densidade é muito baixo, em torno de 0.004. Menos de 1% das arestas comparadas a de um grafo completo estão conectadas.
+![Grafo político](./political_org_per_density.png)
+
+O grau médio informa a quantidade média de entidades do grafo que estão conectas. Conforme visualização da distribuição abaixo, um nó está conectado a aproximadamente a outros 7.91 outros nós. Pela distribuição é possível verificar que há poucos entidades com muitas conexões e grande maioria das entidades possuem poucas conexões. Um gráfico típico de cauda longa, de mode que podemos perceber que há uma formação de hubs, que seriam nós conectados a uma grande quantidade de outros nós com poucas conexões.
+![Grafo político](./political_org_per_degree.png)
+
+Também podemos detectar a quantidade de comunidades, para isso podemos utilizar a função estatística de modularidade que nos informará a quantidade de grupos que será criado.
+Neste caso, o algoritmo detectou 6 grupos.
+![Grafo político](./graph_political_org_per_degree.png)
+
+O  grupo vermelho, azul e verde representam mais de 90% dos agrupamentos dos nós. Vamos focar na avaliação nesses grupos. Verificando quais entidades estão relacionadas em cada um dos grupos.
+![Grafo político](./political_group.png)
+
+![Grafo político](./political_red.png)
+
+No grupo vermelho, a entidade que mais se destaca como popular é o "senate". Podemos perceber também que há um grupo de entidades relacionadas a membros do senado americano tais como Susan Collins, Robert Hendrick e Adam Smith. Também identificamos muitas palavras associadas ao partido republicano, isso faz sentido já que os republicanos são maioria no senado americano. Além disso, percebermos que há algumas entidades associadas ao apoio de iniciativas de exploração do espaço. 
+
+![Grafo político](./political_red_2.png)
+
+No grupo azul, a palavra mais popular é congresso. Encontramos entidades tai como medicare, que é o sistema do governo de plano de saúde para pessoas acima de 65 anos e para pessoas com algum tipo de deficiência; Donal Trump - Presidente dos Eua e Robert Mueller que terminou seu trabalho como diretor do FBI investigando interferência russa na eleição de 2016 como procurador especial do Departamento de Justiça. Donalt Trump e Robert Mueller  se envolveram num processo de pedido de impeachment do presidente Donald Trump feito pelo congresso requisitando seu afastamento do cargo que foi posteriormente barrado no senado, o qual o presidente tem maior apoio de sua bancada.
+
+![Grafo político](./political_blue.png)
+
+No grupo verde percebemos uma aglomeração maior de temas relacionadas a eleição na virginia o qual o democrata Ralph Northam venceu uma disputa acirrada pelo governo do Estado norte-americano da Virgínia, causando um revés ao presidente dos Estados Unidos, Donald Trump, com uma vitória decisiva sobre um republicano que havia adotado algumas das táticas conflituosas do presidente.
+
+![Grafo político](./political_green.png)
+
+Também podemos utilizar uma outra análise por meio da métrica de centralidade betweeness para analisar quais entidades se conectam aos outros grupos. Se destacam congress, senate, donalt trump, suprme court, gop(Partido republicano), medicare. Vale ressaltar que as intuições americanas se destacam nessa análise.
+
+![Grafo político](./political_bet.png)
 
 Para o caso não político, temos que analisar o grafo com mais paciência. Quando realizamos a plotagem do grafo, foi possível identificar a presença de "dois grandes grupos" ao organizarmos os nós por meio do algoritmo de Force Atlas:
 
 ![Grafo não político](./not_political_graph.png)
+
+
+Grafo não político
 
 Temos um grupo superior e um inferior com nós de graus extremamente grandes conectando os dois "clusters". Podemos observar cada uma das posições. Na parte inferior temos:
 
@@ -457,7 +533,31 @@ Isso nos leva a concluir que palavras relacionadas ao partido republicano parece
 
 ![Grafo não político](./not_political_graph_upper.png)
 
-Aqui, notamos um elevado número de termos, nomes, regiões e locais de natureza latina ou relacionados ao sul dos EUA. Então, aparentemente, indivíduos (como atores e artistas) e organizações relacionadas a esses elementos tendem a, por alguma razão, serem ativos na disseminação de propagandas não políticas do Facebook.
+Aqui podemos notar um elevado número de termos, nomes, regiões e locais de natureza latina ou relacionados ao sul dos EUA. Então, aparentemente, indivíduos (como atorese artistas) e organizações relacionadas a esses elementos tendem a, por alguma razão, serem ativos na disseminação de propagandas não políticas do Facebook.
+
+Faremos também  a mesma abordagem das entidades políticas, filtrando somente as entidades relacionadas a pessoas e organizações, para uma anpalise mais aprofunda dos grupos.
+
+![Grafo não político](./graph_not_political_org_per_degree.png)
+
+O grupo laranja, azul e verde representam mais de 90%. Vamos focar na avaliação nesses grupos. O objetico será avaliar as entidades que estão relacionadas em cada um dos grupos.
+
+![Grafo político](./not_political_group.png)
+
+No grupo verde a palavra que mais se destaca é o Bill Penzey que ficou famoso por misturar política e salsa, gastando mais de US $ 700.000 em anúncios no Facebook pelo impeachment de Trump. A Penzeys Spices lançou  uma mistura de cebolinha e alho sem sal para polvilhar sobre tomates, ovos mexidos e salmão. Mas, em vez de imprimir uma receita no rótulo do tempero da Justiça, o proprietário da empresa enviou uma mensagem aos seus clientes:
+A Justiça é a luz que guiou a América em todas as tempestades. Agora, uma das partes quer obstruí-la, torcer, roubar do povo para presenteá-lo aos seus benfeitores. O futuro da América depende de nós não deixar isso acontecer.
+ 
+ ![Grafo político](./not_political_green.png)
+
+No grupo azul, há diversas entidades relacionadas a políticas antitrust. A Caroline Holland, por exemplo, atualmente trabalha como bolsista de política técnica na Mozilla Foundation. Ela está explorando questões de política antitruste e de concorrência à medida que elas se relacionam.
+
+![Grafo político](./not_political_blue.png)
+
+No grupo laranja, estão a palavras mais relacionadas a política tais como republican party, sepreme court, senate. 
+A entidade John McCain também se destaca. John McCain, senador americando, herói de guerra e referência da velha guarda republicana, faleceu vítima de um agressivo câncer cerebral aos 81 anos. Tinha se convertido no grande algoz de Donald Trump.
+Também se destaca a entidade Wisconsin que é um dos 50 estados dos Estados Unidos, localizado na região norte do país. O Wisconsin possui um dos maiores rebanhos de gado bovino do país. 
+No entanto, grande parte está relacionada a entidades políticas. Isso nos leva a concluir que o classificador de propagandas políticas e não políticas parecem tender a possuir um elevado número de falsos positivos no processo de classificação do tipo de postagem. 
+
+![Grafo político](./not_political_orange.png)
 
 Resumindo, nessa seção concluimos que:
 
@@ -472,7 +572,7 @@ Com isso, podemos prosseguir e desenhar o grafo de ego relacionado a "Donald Tru
 
 # Grafo de EGO: Utilizando a entidade "Donald Trump" como exemplo
 
-Iremos traçar o grafo de ego relacionado a "Donal Trump" com base no grafo geral criado na seção anterior. Efetuando os ajustes necessários no Gephi, obtemos:
+Iremos traçar o grafo de ego relacionado a "Donal Trump" a partir do grafo geral criado na seção anterior. Efetuando os ajustes necessários no Gephi, obtemos:
 
 ![Trump graph](./trump_political_graph.png)
 
