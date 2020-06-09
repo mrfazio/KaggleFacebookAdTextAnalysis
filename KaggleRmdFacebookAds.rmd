@@ -535,11 +535,17 @@ Isso nos leva a concluir que palavras relacionadas ao partido republicano parece
 
 Aqui podemos notar um elevado número de termos, nomes, regiões e locais de natureza latina ou relacionados ao sul dos EUA. Então, aparentemente, indivíduos (como atorese artistas) e organizações relacionadas a esses elementos tendem a, por alguma razão, serem ativos na disseminação de propagandas não políticas do Facebook.
 
-Faremos também  a mesma abordagem das entidades políticas, filtrando somente as entidades relacionadas a pessoas e organizações, para uma anpalise mais aprofunda dos grupos.
+Faremos também  a mesma abordagem das entidades políticas, filtrando somente as entidades relacionadas a pessoas e organizações, para uma análise mais aprofunda dos grupos.
+
+O grafo não político é mais denso que o grafo político. Cerca de 5%. O grau médio informa a quantidade média de entidades do grafo que estão conectas. Conforme visualização da distribuição abaixo, um nó está conectado a aproximadamente a outros 10.456, também maior  que o gráfico político.
+
+![Grafo não político](./not_political_density.png)
+
+![Grafo não político](./not_political_degree.png)
 
 ![Grafo não político](./graph_not_political_org_per_degree.png)
 
-O grupo laranja, azul e verde representam mais de 90%. Vamos focar na avaliação nesses grupos. O objetico será avaliar as entidades que estão relacionadas em cada um dos grupos.
+Utilizando a função de modularidade no grafo não politica, identificou-se 4 grupos. O grupo laranja, azul e verde representam mais de 90%. Vamos focar na avaliação nesses grupos. O objetico será avaliar as entidades que estão relacionadas em cada um dos grupos.
 
 ![Grafo político](./not_political_group.png)
 
